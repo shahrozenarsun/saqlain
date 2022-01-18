@@ -133,7 +133,7 @@ nav.navbar.justify-content-between {
   padding: 0% 5%;
   height: 100px;
   width: 80%;
-  left: 10%
+  left: 10%;
 }
 .NFTtextHeading {
   color: #ccb248;
@@ -144,6 +144,24 @@ nav.navbar.justify-content-between {
   margin: 2% 0%;
   font-size: 1vw;
   margin-left: -8px;
+}
+.respImage {
+  width: 55%;
+}
+.paperContainer {
+  position: relative;
+}
+.arrowImage {
+  position: absolute;
+  left: 7%;
+  width: 6%;
+  top: 23%;
+}
+.paperText {
+  position: absolute;
+  top: 18%;
+  color: white;
+  left: 18%;
 }
 @media screen and (max-width: 1000px) {
   .heading-1 {
@@ -175,6 +193,9 @@ nav.navbar.justify-content-between {
   .bannerInnerImage {
     width: 60%;
     left: 21%;
+  }
+  .left-nav-img{
+    display: none;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 800px) {
