@@ -98,7 +98,7 @@ img.cirle {
   top: -2%;
 }
 a.navbar-brand {
-  color: #5389A2 !important;
+  color: #5389a2 !important;
   font-size: 1.15rem;
 }
 .logo {
@@ -123,6 +123,27 @@ nav.navbar.justify-content-between {
   display: flex;
   flex-direction: row;
   position: absolute;
+}
+.NFTtextContainer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 11%;
+  text-align: left;
+  padding: 0% 5%;
+  height: 100px;
+  width: 80%;
+  left: 10%
+}
+.NFTtextHeading {
+  color: #ccb248;
+  font-size: 1.5vw;
+}
+.NFTtext {
+  color: #ffffff;
+  margin: 2% 0%;
+  font-size: 1vw;
+  margin-left: -8px;
 }
 @media screen and (max-width: 1000px) {
   .heading-1 {
