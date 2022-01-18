@@ -12,7 +12,7 @@ body {
 }
 .bannerImage {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   background-image: url("../assets/BannerImage.png");
   background-position: center top;
   background-repeat: no-repeat;
@@ -34,14 +34,20 @@ body {
   height: 6rem;
   background-color: #0b1418;
 }
+.left-nav-head {
+  display: flex;
+  gap: 2rem;
+}
+
 .left-nav {
   margin-left: 10rem;
+  gap: 2rem;
 }
 .right-nav {
   margin-right: 10rem;
 }
 .text-container {
-  width: "100%";
+  width: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -91,11 +97,12 @@ img.cirle {
   top: -2%;
 }
 a.navbar-brand {
-  color: #b09a40 !important;
+  color: #5389A2 !important;
+  font-size: 1.15rem;
 }
 .logo {
-  width: 25%;
-  margin-right: 5%;
+  width: 50%;
+  align-self: center;
 }
 nav.navbar.justify-content-between {
   height: 5rem;
