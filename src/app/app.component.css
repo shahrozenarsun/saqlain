@@ -107,6 +107,22 @@ a.navbar-brand {
 nav.navbar.justify-content-between {
   height: 5rem;
 }
+.button-container {
+  position: relative;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.button-image {
+  position: absolute;
+  left: 0;
+}
+.button-text-container {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+}
 @media screen and (max-width: 1000px) {
   .heading-1 {
     font-size: 1.5rem;
@@ -129,6 +145,14 @@ nav.navbar.justify-content-between {
   }
   .NFTContainer {
     width: 100%;
+  }
+  .bannerImage {
+    width: 100%;
+    height: 50vh;
+  }
+  .bannerInnerImage {
+    width: 60%;
+    left: 21%;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 800px) {
@@ -153,9 +177,9 @@ nav.navbar.justify-content-between {
     height: 70vh;
   }
   .bannerInnerImage {
-    left: 30%;
-    top: 33%;
-    width: 40%;
+    left: 25%;
+    top: 32%;
+    width: 50%;
   }
 }
 @media only screen and (min-width: 800px) and (max-width: 1000px) {
@@ -163,11 +187,27 @@ nav.navbar.justify-content-between {
     width: 7%;
     margin: 0% 0% 0% 33%;
   }
+  .bannerImage {
+    height: 70vh;
+  }
+  .bannerInnerImage {
+    left: 32%;
+    top: 32%;
+    width: 40%;
+  }
 }
 @media only screen and (min-width: 1000px) and (max-width: 1200px) {
   img.cirle {
     width: 10%;
     margin: 0% 0% 0% 16%;
+  }
+  .bannerImage {
+    height: 70vh;
+  }
+  .bannerInnerImage {
+    left: 33%;
+    top: 33%;
+    width: 40%;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1300px) {
