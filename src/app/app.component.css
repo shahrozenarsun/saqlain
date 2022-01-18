@@ -32,6 +32,7 @@ body {
 }
 .navbar {
   height: 6rem;
+  width: 100%;
   background-color: #0b1418;
 }
 .left-nav-head {
