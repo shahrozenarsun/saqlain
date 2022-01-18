@@ -19,3 +19,79 @@ body {
 .navbar {
   height: 8rem;
 }
+
+.text-container {
+  width: "100%";
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 5% 0%;
+}
+
+.heading-1 {
+  font-size: 4rem;
+  color: #b09a40;
+}
+
+.heading-2 {
+  font-size: 1.3rem;
+  color: #0a1c26;
+}
+
+.heading-2-container {
+  width: 45%;
+  margin: 0 auto;
+}
+
+img.cirle {
+  width: 9%;
+  margin: 0% 0% 0% 26%;
+}
+
+@media screen and (max-width: 1000px) {
+  .heading-1 {
+    font-size: 1.5rem;
+  }
+  .heading-2 {
+    font-size: 0.8rem;
+  }
+  .heading-2-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+  img.cirle {
+    width: 14%;
+    margin: 0% 0% 0% 13%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  img.cirle {
+    width: 9%;
+    margin: 0% 0% 0% 30%;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+  img.cirle {
+    width: 7%;
+    margin: 0% 0% 0% 33%;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+  img.cirle {
+    width: 10%;
+    margin: 0% 0% 0% 16%;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1300px) {
+  img.cirle {
+    width: 9%;
+    margin: 0% 0% 0% 22%;
+  }
+}
