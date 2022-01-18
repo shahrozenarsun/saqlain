@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+  }
+  .bannerImage {
+    width: 100%;
+    height: 600px;
+    background-image: url("../assets/BannerImage.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bannerInnerImage {
+    width: 20%;
+  }
+  .image {
+    width: 10%;
+  }
+  .text {
+    font-size: 1.5vw;
+  }
+  .textDiv {
+    width: 50%;
+  }
+  .containerNFT {
+    flex-direction: row;
+  }
+  .NFTtextHeading {
+    color: #ccb248;
+    font-size: 1.5vw;
+  }
+  .NFTtext {
+    color: #ffffff;
+    margin: 2% 0%;
+    font-size: 1vw;
+    margin-left: -8px;
+  }
+  /* The actual timeline (the vertical ruler) */
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    background-color: #b09a40;
+    top: 15px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  /* Container around content */
+  .container {
+    /* padding: 10px 40px; */
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  /* The circles on the timeline */
+  .container::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -14px;
+    background-color: white;
+    border: 2px solid #b09a40;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0px;
+    position: absolute;
+    top: 29px;
+    width: 25px;
+    z-index: 2;
+    right: 0px;
+    border: medium solid #b09a40;
+    border-width: 1px 0 1px 1px;
+    background-color: #b09a40;
+    /* border-color: transparent transparent transparent black; */
+  }
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0px;
+    position: absolute;
+    top: 29px;
+    width: 25px;
+    z-index: 2;
+    left: 0px;
+    border: medium solid #b09a40;
+    background-color: #b09a40;
+    border-width: 1px 1px 1px 0;
+    /* border-color: transparent white transparent transparent; */
+  }
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40%;
+    width: 50%;
+    padding-top: 0px;
+  }
+  h2 {
+    color: #b09a40;
+  }
+  p {
+    color: #0b1418;
+  }
+  
+  .leftContainerHeading {
+    text-align: right;
+    margin-top: 16px;
+    font-family: JosefinSans-SemiBold !important;
+  }
+  .leftText {
+    text-align: right;
+    color: #0b1418;
+  }
+  .rightContainer {
+    margin-left: 0%;
+  }
+  .rightContainerHeading {
+    margin-top: 16px;
+    font-family: JosefinSans-SemiBold !important;
+  }
+  .rightText {
+      color: #0B1418;
+  }
+  @media screen and (max-width: 600px) {
+    .bannerImage {
+      height: 355px;
+    }
+    .bannerInnerImage {
+      width: 60%;
+    }
+    .image {
+      width: 20%;
+    }
+    .text {
+      font-size: 3vw;
+    }
+    .textDiv {
+      width: 90%;
+    }
+    .containerNFT {
+      flex-direction: column;
+    }
+    .NFTtextHeading {
+      font-size: 4vw;
+    }
+    .NFTtext {
+      font-size: 2.7vw;
+    }
+    /* Place the timelime to the left */
+    .timeline::after {
+      left: 28px;
+      margin-left: -7px;
+      width: 1px;
+    }
+    /* Full-width containers */
+    .container {
+      width: 40%;
+      /* padding-left: 70px; */
+      padding-right: 25px;
+    }
+    .left::before {
+      right: 86%;
+      top: 20.5px;
+      width: 10px;
+      border-width: 0px 0 1px 1px;
+      width: 5px;
+    }
+    .right::before {
+      left: 22px;
+      top: 20.5px;
+      width: 10px;
+      border-width: 0px 0 1px 1px;
+      width: 5px;
+    }
+    /* Make sure that all arrows are pointing leftwards */
+    /* .container::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    } */
+    /* Make sure all circles are at the same spot */
+    .left::after,
+    .right::after {
+      left: 15px;
+    }
+    /* Make all right containers behave like the left ones */
+    .right {
+      left: 0%;
+    }
+    .content {
+      padding: 0%;
+      width: 160%;
+    }
+    .container::after {
+      width: 10px;
+      height: 10px;
+      border: 1px solid #b09a40;
+    }
+    .leftContainerHeading {
+      font-size: 18px;
+      font-weight: bold;
+      text-align: left;
+      margin-top: 13px;
+      font-size: 14px;
+    }
+    .leftText {
+      text-align: left;
+      padding-left: 0% !important;
+      margin-top: -5px;
+      font-family: JosefinSans-SemiBold !important;
+      font-size: 13px;
+    }
+    .rightContainer {
+      margin-left: 40%;
+    }
+    .rightContainerHeading {
+      font-weight: bold;
+      text-align: left;
+      margin-top: 13px;
+      font-size: 14px;
+    }
+    .rightText {
+      text-align: left;
+      padding-left: 0% !important;
+      margin-top: -5px;
+      font-family: JosefinSans-SemiBold !important;
+      font-size: 13px;
+    }
+  }
+  
