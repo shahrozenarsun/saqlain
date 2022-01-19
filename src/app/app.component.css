@@ -310,6 +310,44 @@ nav.navbar.justify-content-between {
   .navbar {
     height: 5rem !important;
   }
+  .right-nav-desc {
+    color: #b09a40;
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 0 !important;
+    align-self: center;
+    font-weight: bold;
+  }
+  .right-nav-body {
+    /*height: 300px;*/
+    padding: .3rem .3rem;
+    background: #0b1418;
+    position: relative;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 1px;
+    justify-content: center;
+    border: 1px solid #b09a40;
+    border-top-left-radius: 8px 9px;
+    border-bottom-right-radius: 2px 2px;
+  }
+  .right-nav-body:before {
+    display: none;
+    content: '';
+    position: absolute;
+    top: -2%; left: -1%;
+    border-top: 8px solid #0b1418;
+    border-right: 8px solid #B09A40;
+    width: 0;
+  }
+  .file-arrow {
+    width: 12%;
+    display: none;
+  }
+  .file-arrow-color {
+    display: block;
+    width: 15%;
+  }
 }
 @media only screen and (min-width: 800px) and (max-width: 1000px) {
   img.cirle {
@@ -328,11 +366,11 @@ nav.navbar.justify-content-between {
     width: 45%;
   }
   .left-nav {
-    margin-left: 1.5rem;
+    margin-left: 2rem;
     gap: 1rem;
   }
   .right-nav {
-    margin-right: 1rem;
+    margin-right: 2rem;
   }
   .left-nav-head {
     display: flex;
@@ -341,6 +379,46 @@ nav.navbar.justify-content-between {
   .navbar-brand {
     font-size: 16px !important;
   }
+  .right-nav-desc {
+    color: #b09a40;
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 0 !important;
+    align-self: center;
+    font-weight: bold;
+  }
+  .right-nav-body {
+    /*height: 300px;*/
+    padding: .3rem .3rem;
+    background: #0b1418;
+    position: relative;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 1px;
+    justify-content: center;
+    border: 1px solid #b09a40;
+    border-top-left-radius: 8px 9px;
+    border-bottom-right-radius: 2px 2px;
+  }
+  .right-nav-body:before {
+    display: none;
+    content: '';
+    position: absolute;
+    top: -2%; left: -1%;
+    border-top: 8px solid #0b1418;
+    border-right: 8px solid #B09A40;
+    width: 0;
+  }
+  .file-arrow {
+    width: 12%;
+    display: none;
+  }
+  .file-arrow-color {
+    display: block;
+    width: 15%;
+  }
+
+
 }
 @media only screen and (min-width: 1000px) and (max-width: 1200px) {
   img.cirle {
