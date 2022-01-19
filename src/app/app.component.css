@@ -47,15 +47,15 @@ body {
   margin-right: 10rem;
 }
 .right-nav-desc {
-  color: #FFFFFF;
+  color: #ffffff;
   display: flex;
   margin-bottom: 0 !important;
   align-self: center;
 }
 .right-nav-body {
   /*height: 300px;*/
-  padding: .5rem 1.3rem;
-  background: #B09A40;
+  padding: 0.5rem 1.3rem;
+  background: #b09a40;
   position: relative;
   display: flex;
   gap: 0.8rem;
@@ -63,11 +63,12 @@ body {
   justify-content: center;
 }
 .right-nav-body:before {
-  content: '';
+  content: "";
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   border-top: 14px solid #0b1418;
-  border-right: 15px solid #B09A40;
+  border-right: 15px solid #b09a40;
   width: 0;
 }
 .file-arrow {
@@ -86,6 +87,7 @@ body {
 .heading-1 {
   font-size: 4rem;
   color: #b09a40;
+  margin-top: 3%;
 }
 .heading-2 {
   font-size: 1.3rem;
@@ -96,17 +98,25 @@ body {
   width: 45%;
   margin: 0 auto;
 }
+.heading-1-container {
+  width: 51%;
+  margin: 0 auto;
+  position: relative;
+}
 img.cirle {
-  width: 9%;
-  margin: 0% 0% 0% 26%;
+  width: 15%;
+  left: 5%;
+  position: absolute;
+  /* margin: 0% 0% 0% 26%; */
 }
 .NFTContainer {
-  width: 90%;
+  width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  margin-left: 14%;
 }
 .NFT {
   position: relative;
@@ -116,6 +126,7 @@ img.cirle {
   display: flex;
   margin-top: 2%;
   margin-bottom: 2%;
+  margin-left: -5%;
 }
 .NFT-image {
   width: 80%;
@@ -160,7 +171,7 @@ nav.navbar.justify-content-between {
   bottom: 11%;
   text-align: left;
   padding: 0% 5%;
-  height: 100px;
+  /* height: 100px; */
   width: 80%;
   left: 10%;
 }
@@ -287,15 +298,36 @@ nav.navbar.justify-content-between {
   }
 }
 @media only screen and (min-width: 300px) and (max-width: 600px) {
+  .heading-1-container {
+    width: 51%;
+    margin: 0 auto;
+    position: relative;
+  }
   img.cirle {
-    width: 14%;
-    margin: 0% 0% 0% 13%;
+    width: 23%;
+    left: -4%;
+    position: absolute;
+  }
+  .heading-1 {
+    font-size: 5vw;
+    margin-top: 5%;
   }
   .NFTContainer {
     flex-direction: column;
+    width: 80%;
   }
-  .NFTContainer {
-    width: 100%;
+  .NFTtextHeading {
+    font-size: 5vw;
+  }
+  .heading-1 {
+    font-size: 5vw;
+  }
+  .heading-2 {
+    font-size: 2.8vw;
+  }
+  .NFTtext {
+    font-size: 2.8vw;
+    padding: 0% 2%;
   }
   .bannerImage {
     width: 100%;
@@ -337,7 +369,7 @@ nav.navbar.justify-content-between {
   }
   .right-nav-body {
     /*height: 300px;*/
-    padding: .3rem .3rem;
+    padding: 0.3rem 0.3rem;
     background: #0b1418;
     position: relative;
     display: flex;
@@ -350,11 +382,12 @@ nav.navbar.justify-content-between {
   }
   .right-nav-body:before {
     display: none;
-    content: '';
+    content: "";
     position: absolute;
-    top: -2%; left: -1%;
+    top: -2%;
+    left: -1%;
     border-top: 8px solid #0b1418;
-    border-right: 8px solid #B09A40;
+    border-right: 8px solid #b09a40;
     width: 0;
   }
   .file-arrow {
@@ -367,25 +400,47 @@ nav.navbar.justify-content-between {
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 800px) {
+  .heading-1-container {
+    width: 51%;
+    margin: 0 auto;
+    position: relative;
+  }
   img.cirle {
-    width: 9%;
-    margin: 0% 0% 0% 30%;
+    width: 23%;
+    left: -4%;
+    position: absolute;
+  }
+  .heading-1 {
+    font-size: 5vw;
+    margin-top: 5%;
+  }
+  .heading-2 {
+    font-size: 2.8vw;
   }
   .NFTContainer {
+    width: 80%;
     flex-direction: column;
   }
+  .NFT {
+    width: 95%;
+    position: relative;
+  }
   .NFT-image {
-    width: 40%;
+    width: 80%;
   }
   .NFT-border {
-    width: 40%;
-    left: 29%;
-  }
-  .NFTContainer {
-    width: 100%;
+    width: 80%;
+    left: 8%;
   }
   .bannerImage {
     height: 70vh;
+  }
+  .NFTtextHeading {
+    font-size: 5vw;
+  }
+  .NFTtext {
+    font-size: 2.8vw;
+    padding: 0% 2%;
   }
   .bannerInnerImage {
     left: 25%;
@@ -419,7 +474,7 @@ nav.navbar.justify-content-between {
   }
   .right-nav-body {
     /*height: 300px;*/
-    padding: .3rem .3rem;
+    padding: 0.3rem 0.3rem;
     background: #0b1418;
     position: relative;
     display: flex;
@@ -432,11 +487,12 @@ nav.navbar.justify-content-between {
   }
   .right-nav-body:before {
     display: none;
-    content: '';
+    content: "";
     position: absolute;
-    top: -2%; left: -1%;
+    top: -2%;
+    left: -1%;
     border-top: 8px solid #0b1418;
-    border-right: 8px solid #B09A40;
+    border-right: 8px solid #b09a40;
     width: 0;
   }
   .file-arrow {
@@ -449,9 +505,19 @@ nav.navbar.justify-content-between {
   }
 }
 @media only screen and (min-width: 800px) and (max-width: 1000px) {
+  .heading-1-container {
+    width: 51%;
+    margin: 0 auto;
+    position: relative;
+  }
   img.cirle {
-    width: 7%;
-    margin: 0% 0% 0% 33%;
+    width: 23%;
+    left: -4%;
+    position: absolute;
+  }
+  .heading-1 {
+    font-size: 5vw;
+    margin-top: 5%;
   }
   .bannerImage {
     height: 70vh;
@@ -488,7 +554,7 @@ nav.navbar.justify-content-between {
   }
   .right-nav-body {
     /*height: 300px;*/
-    padding: .3rem .3rem;
+    padding: 0.3rem 0.3rem;
     background: #0b1418;
     position: relative;
     display: flex;
@@ -501,11 +567,12 @@ nav.navbar.justify-content-between {
   }
   .right-nav-body:before {
     display: none;
-    content: '';
+    content: "";
     position: absolute;
-    top: -2%; left: -1%;
+    top: -2%;
+    left: -1%;
     border-top: 8px solid #0b1418;
-    border-right: 8px solid #B09A40;
+    border-right: 8px solid #b09a40;
     width: 0;
   }
   .file-arrow {
@@ -516,13 +583,27 @@ nav.navbar.justify-content-between {
     display: block;
     width: 15%;
   }
-
-
+  .NFTtextContainer {
+    bottom: 6%;
+  }
+  .NFTtext {
+    padding: 0% 5%;
+  }
 }
 @media only screen and (min-width: 1000px) and (max-width: 1200px) {
+  .heading-1-container {
+    width: 51%;
+    margin: 0 auto;
+    position: relative;
+  }
   img.cirle {
-    width: 10%;
-    margin: 0% 0% 0% 16%;
+    width: 23%;
+    left: -4%;
+    position: absolute;
+  }
+  .heading-1 {
+    font-size: 5vw;
+    margin-top: 5%;
   }
   .bannerImage {
     height: 70vh;
@@ -531,6 +612,12 @@ nav.navbar.justify-content-between {
     left: 33%;
     top: 33%;
     width: 40%;
+  }
+  .NFTtextContainer {
+    bottom: 6%;
+  }
+  .NFTtext {
+    padding: 0% 5%;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1300px) {
