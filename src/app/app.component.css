@@ -46,6 +46,7 @@ body {
   display: flex;
   gap: 2rem;
 }
+
 .left-nav {
   margin-left: 10rem;
   gap: 2rem;
@@ -115,11 +116,13 @@ body {
   width: 45%;
   margin: 0 auto;
 }
+
 .heading-1-container {
   width: 51%;
   margin: 0 auto;
   position: relative;
 }
+
 img.cirle {
   width: 15%;
   left: 5%;
@@ -215,30 +218,36 @@ nav.navbar.justify-content-between {
   font-size: 1vw;
   margin-left: -8px;
 }
+
 .respImage {
   width: 55%;
 }
+
 .paperContainer {
   position: relative;
 }
+
 .arrowImage {
   position: absolute;
   left: 7%;
   width: 6%;
   top: 23%;
 }
+
 .paperText {
   position: absolute;
   top: 18%;
   color: white;
   left: 18%;
 }
+
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
 }
+
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
   content: "";
@@ -250,6 +259,7 @@ nav.navbar.justify-content-between {
   left: 50%;
   margin-left: -3px;
 }
+
 /* Container around content */
 .container {
   padding: 10px 40px;
@@ -257,6 +267,7 @@ nav.navbar.justify-content-between {
   background-color: inherit;
   width: 50%;
 }
+
 /* The circles on the timeline */
 .container::after {
   content: "";
@@ -270,14 +281,17 @@ nav.navbar.justify-content-between {
   border-radius: 50%;
   z-index: 1;
 }
+
 /* Place the container to the left */
 .left {
   left: 0;
 }
+
 /* Place the container to the right */
 .right {
   left: 50%;
 }
+
 /* Add arrows to the left container (pointing right) */
 .left::before {
   content: " ";
@@ -291,6 +305,7 @@ nav.navbar.justify-content-between {
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent white;
 }
+
 /* Add arrows to the right container (pointing left) */
 .right::before {
   content: " ";
@@ -304,10 +319,12 @@ nav.navbar.justify-content-between {
   border-width: 10px 10px 10px 0;
   border-color: transparent white transparent transparent;
 }
+
 /* Fix the circle for containers on the right side */
 .right::after {
   left: -16px;
 }
+
 /* The actual content */
 .content {
   padding: 20px 30px;
@@ -316,6 +333,39 @@ nav.navbar.justify-content-between {
   border-radius: 6px;
 }
 
+/*VIDEO COVER */
+.video-cover {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.video-cover-desc {
+  width: 80%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: relative;
+}
+.nft-cover {
+  width: 70%;
+  z-index: 5;
+}
+.nft-border {
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  left: 29%;
+  top: -2%;
+  z-index: 4;
+}
+.play-button {
+  width: 60px;
+  height: 60px;
+  z-index: 6;
+  position: absolute;
+  top: 48%;
+  left: 62%;
+}
 /*FOOTER CSS*/
 .footer {
   width: 100%;
@@ -378,11 +428,13 @@ nav.navbar.justify-content-between {
     margin: 0 auto;
     position: relative;
   }
+
   img.cirle {
     width: 23%;
     left: -4%;
     position: absolute;
   }
+
   .heading-1 {
     font-size: 5vw;
     margin-top: 5%;
@@ -392,19 +444,24 @@ nav.navbar.justify-content-between {
     flex-direction: column;
     width: 80%;
   }
+
   .NFTtextHeading {
     font-size: 5vw;
   }
+
   .heading-1 {
     font-size: 5vw;
   }
+
   .heading-2 {
     font-size: 2.8vw;
   }
+
   .NFTtext {
     font-size: 2.8vw;
     padding: 0% 2%;
   }
+
   .NFTContainer {
     width: 80%;
   }
@@ -492,7 +549,6 @@ nav.navbar.justify-content-between {
   }
 
   /*FOOTER CSS*/
-
   .footer-inner {
     margin-top: 3rem;
     width: 50%;
@@ -514,6 +570,32 @@ nav.navbar.justify-content-between {
     padding-bottom: 1rem;
     font-size: 10px;
   }
+  /*VIDEO COVER*/
+  .video-cover {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .video-cover-desc {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .nft-cover {
+    width: 90%;
+  }
+  .nft-border {
+    width: 90%;
+    height: 100%;
+    left: 3%;
+    top: -3%;
+  }
+  .play-button {
+    width: 30px;
+    height: 30px;
+    top: 44%;
+    left: 48%;
+  }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 800px) {
@@ -522,15 +604,18 @@ nav.navbar.justify-content-between {
     margin: 0 auto;
     position: relative;
   }
+
   img.cirle {
     width: 23%;
     left: -4%;
     position: absolute;
   }
+
   .heading-1 {
     font-size: 5vw;
     margin-top: 5%;
   }
+
   .heading-2 {
     font-size: 2.8vw;
   }
@@ -539,6 +624,7 @@ nav.navbar.justify-content-between {
     width: 80%;
     flex-direction: column;
   }
+
   .NFT {
     width: 95%;
     position: relative;
@@ -556,13 +642,16 @@ nav.navbar.justify-content-between {
   .bannerImage {
     height: 70vh;
   }
+
   .NFTtextHeading {
     font-size: 5vw;
   }
+
   .NFTtext {
     font-size: 2.8vw;
     padding: 0% 2%;
   }
+
   .bannerInnerImage {
     left: 25%;
     top: 32%;
@@ -634,6 +723,7 @@ nav.navbar.justify-content-between {
     display: block;
     width: 15%;
   }
+
   /* Place the timelime to the left */
   .timeline::after {
     left: 31px;
@@ -672,11 +762,13 @@ nav.navbar.justify-content-between {
     margin: 0 auto;
     position: relative;
   }
+
   img.cirle {
     width: 23%;
     left: -4%;
     position: absolute;
   }
+
   .heading-1 {
     font-size: 5vw;
     margin-top: 5%;
@@ -685,6 +777,7 @@ nav.navbar.justify-content-between {
   .bannerImage {
     height: 70vh;
   }
+
   .NFTContainer {
     width: 80%;
   }
@@ -760,12 +853,15 @@ nav.navbar.justify-content-between {
     display: block;
     width: 15%;
   }
+
   .NFTtextContainer {
     bottom: 6%;
   }
+
   .NFTtext {
     padding: 0% 5%;
   }
+
   /*FOOTER*/
   .footer-inner {
     margin-top: 3rem;
@@ -788,6 +884,32 @@ nav.navbar.justify-content-between {
     padding-bottom: 1rem;
     font-size: 10px;
   }
+  /*VIDEO COVER*/
+  .video-cover {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .video-cover-desc {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .nft-cover {
+    width: 90%;
+  }
+  .nft-border {
+    width: 90%;
+    height: 100%;
+    left: 4%;
+    top: -2%;
+  }
+  .play-button {
+    width: 45px;
+    height: 45px;
+    top: 44%;
+    left: 48%;
+  }
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1200px) {
@@ -796,11 +918,13 @@ nav.navbar.justify-content-between {
     margin: 0 auto;
     position: relative;
   }
+
   img.cirle {
     width: 23%;
     left: -4%;
     position: absolute;
   }
+
   .heading-1 {
     font-size: 5vw;
     margin-top: 5%;
@@ -809,20 +933,25 @@ nav.navbar.justify-content-between {
   .bannerImage {
     height: 70vh;
   }
+
   .NFTContainer {
     width: 80%;
   }
+
   .bannerInnerImage {
     left: 33%;
     top: 33%;
     width: 40%;
   }
+
   .NFTtextContainer {
     bottom: 6%;
   }
+
   .NFTtext {
     padding: 0% 5%;
   }
+
   /*FOOTER*/
   .footer-inner {
     margin-top: 3rem;
@@ -834,6 +963,7 @@ nav.navbar.justify-content-between {
     gap: 1rem;
     padding-top: 1rem;
   }
+
   /*test*/
   .footer-icon {
     height: 35px;
