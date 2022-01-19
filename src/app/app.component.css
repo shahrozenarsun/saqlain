@@ -216,7 +216,7 @@ nav.navbar.justify-content-between {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
-  margin-left: -10%;
+  margin-left: -3%;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -1142,7 +1142,7 @@ nav.navbar.justify-content-between {
   }
   .timeline {
     width: 90%;
-    margin-left: -18%;
+    margin-left: -15%;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
@@ -1153,6 +1153,11 @@ nav.navbar.justify-content-between {
   .timeline {
     width: 90%;
     margin-left: -18%;
+  }
+}
+@media only screen and (min-width: 1499px) and (max-width: 2100px) {
+  .timeline {
+    width: 90%;
   }
 }
 
