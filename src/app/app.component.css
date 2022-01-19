@@ -46,6 +46,36 @@ body {
 .right-nav {
   margin-right: 10rem;
 }
+.right-nav-desc {
+  color: #FFFFFF;
+  display: flex;
+  margin-bottom: 0 !important;
+  align-self: center;
+}
+.right-nav-body {
+  /*height: 300px;*/
+  padding: .5rem 1.3rem;
+  background: #B09A40;
+  position: relative;
+  display: flex;
+  gap: 0.8rem;
+  border-radius: 1px;
+  justify-content: center;
+}
+.right-nav-body:before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  border-top: 14px solid #0b1418;
+  border-right: 15px solid #B09A40;
+  width: 0;
+}
+.file-arrow {
+  width: 16%;
+}
+.file-arrow-color {
+  display: none;
+}
 .text-container {
   width: 100%;
   display: flex;
@@ -275,8 +305,65 @@ nav.navbar.justify-content-between {
     width: 60%;
     left: 21%;
   }
+  /*for the navbar*/
   .left-nav-img {
     display: none;
+  }
+  .navbar {
+    height: 3.5rem !important;
+    flex-direction: column-reverse;
+  }
+  .left-nav {
+    margin-left: 2rem;
+    gap: 0.8rem;
+  }
+  .right-nav {
+    margin-right: 1rem;
+  }
+  .left-nav-head {
+    display: flex;
+    gap: 0.8rem;
+  }
+  .navbar-brand {
+    font-size: 12px !important;
+  }
+  .right-nav-desc {
+    color: #b09a40;
+    display: flex;
+    font-size: 12px;
+    margin-bottom: 0 !important;
+    align-self: center;
+    font-weight: bold;
+  }
+  .right-nav-body {
+    /*height: 300px;*/
+    padding: .3rem .3rem;
+    background: #0b1418;
+    position: relative;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 1px;
+    justify-content: center;
+    border: 1px solid #b09a40;
+    border-top-left-radius: 8px 9px;
+    border-bottom-right-radius: 2px 2px;
+  }
+  .right-nav-body:before {
+    display: none;
+    content: '';
+    position: absolute;
+    top: -2%; left: -1%;
+    border-top: 8px solid #0b1418;
+    border-right: 8px solid #B09A40;
+    width: 0;
+  }
+  .file-arrow {
+    width: 12%;
+    display: none;
+  }
+  .file-arrow-color {
+    display: block;
+    width: 12%;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 800px) {
@@ -305,30 +392,22 @@ nav.navbar.justify-content-between {
     top: 32%;
     width: 50%;
   }
-  .timeline::after {
-    left: 31px;
+  .left-nav {
+    margin-left: 1.5rem;
+    gap: 1rem;
   }
-  /* Full-width containers */
-  .container {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
+  .right-nav {
+    margin-right: 1rem;
   }
-  /* Make sure that all arrows are pointing leftwards */
-  .container::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+  .left-nav-head {
+    display: flex;
+    gap: 1rem;
   }
-  /* Make sure all circles are at the same spot */
-  .left::after,
-  .right::after {
-    left: 15px;
+  .navbar-brand {
+    font-size: 16px !important;
   }
-  /* Make all right containers behave like the left ones */
-  .right {
-    left: 0%;
+  .navbar {
+    height: 5rem !important;
   }
 }
 @media only screen and (min-width: 800px) and (max-width: 1000px) {
@@ -343,6 +422,23 @@ nav.navbar.justify-content-between {
     left: 32%;
     top: 32%;
     width: 40%;
+  }
+  .logo {
+    width: 45%;
+  }
+  .left-nav {
+    margin-left: 1.5rem;
+    gap: 1rem;
+  }
+  .right-nav {
+    margin-right: 1rem;
+  }
+  .left-nav-head {
+    display: flex;
+    gap: 1rem;
+  }
+  .navbar-brand {
+    font-size: 16px !important;
   }
 }
 @media only screen and (min-width: 1000px) and (max-width: 1200px) {
