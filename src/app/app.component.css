@@ -1,18 +1,15 @@
 html {
   font-size: 62.5%;
 }
-
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
 }
-
 *.focus {
   outline: none;
 }
-
 .bannerImage {
   width: 100%;
   height: 90vh;
@@ -24,24 +21,20 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .bannerInnerImage {
   position: absolute;
   left: 33%;
   top: 33%;
   width: 30%;
 }
-
 .banner {
   position: relative;
 }
-
 .navbar {
   height: 6rem;
   width: 100%;
   background-color: #0b1418;
 }
-
 .left-nav-head {
   display: flex;
   gap: 2rem;
@@ -50,18 +43,15 @@ body {
   margin-left: 10rem;
   gap: 2rem;
 }
-
 .right-nav {
   margin-right: 10rem;
 }
-
 .right-nav-desc {
   color: #ffffff;
   display: flex;
   margin-bottom: 0 !important;
   align-self: center;
 }
-
 .right-nav-body {
   /*height: 300px;*/
   padding: 0.5rem 1.3rem;
@@ -72,7 +62,6 @@ body {
   border-radius: 1px;
   justify-content: center;
 }
-
 .right-nav-body:before {
   content: "";
   position: absolute;
@@ -82,15 +71,12 @@ body {
   border-right: 15px solid #b09a40;
   width: 0;
 }
-
 .file-arrow {
   width: 16%;
 }
-
 .file-arrow-color {
   display: none;
 }
-
 .text-container {
   width: 100%;
   display: flex;
@@ -98,19 +84,16 @@ body {
   text-align: center;
   margin: 5% 0%;
 }
-
 .heading-1 {
   font-size: 4rem;
   color: #b09a40;
   margin-top: 3%;
 }
-
 .heading-2 {
   font-size: 1.3rem;
   color: #0a1c26;
   margin-top: 2%;
 }
-
 .heading-2-container {
   width: 45%;
   margin: 0 auto;
@@ -126,7 +109,6 @@ img.cirle {
   position: absolute;
   /* margin: 0% 0% 0% 26%; */
 }
-
 .NFTContainer {
   width: 80%;
   display: flex;
@@ -136,7 +118,6 @@ img.cirle {
   margin: 0 auto;
   margin-left: 14%;
 }
-
 .NFT {
   position: relative;
   margin: 0 auto;
@@ -147,32 +128,26 @@ img.cirle {
   margin-bottom: 2%;
   margin-left: -5%;
 }
-
 .NFT-image {
   width: 80%;
 }
-
 .NFT-border {
   width: 80%;
   position: absolute;
   left: 8%;
   top: -2%;
 }
-
 a.navbar-brand {
   color: #5389a2 !important;
   font-size: 1.15rem;
 }
-
 .logo {
   width: 50%;
   align-self: center;
 }
-
 nav.navbar.justify-content-between {
   height: 5rem;
 }
-
 .button-container {
   position: relative;
   display: flex;
@@ -180,18 +155,15 @@ nav.navbar.justify-content-between {
   justify-content: center;
   flex-direction: row;
 }
-
 .button-image {
   position: absolute;
   left: 0;
 }
-
 .button-text-container {
   display: flex;
   flex-direction: row;
   position: absolute;
 }
-
 .NFTtextContainer {
   display: flex;
   flex-direction: column;
@@ -203,12 +175,10 @@ nav.navbar.justify-content-between {
   width: 80%;
   left: 10%;
 }
-
 .NFTtextHeading {
   color: #ccb248;
   font-size: 1.5vw;
 }
-
 .NFTtext {
   color: #ffffff;
   margin: 2% 0%;
@@ -238,16 +208,17 @@ nav.navbar.justify-content-between {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
+  margin-left: -10%;
 }
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
   content: "";
   position: absolute;
-  width: 6px;
-  background-color: white;
-  top: 0;
+  width: 1.5px;
+  background-color: #b09a40;
+  top: 15px;
   bottom: 0;
-  left: 50%;
+  left: 75.5%;
   margin-left: -3px;
 }
 /* Container around content */
@@ -264,8 +235,8 @@ nav.navbar.justify-content-between {
   width: 25px;
   height: 25px;
   right: -17px;
-  background-color: white;
-  border: 4px solid #ff9f55;
+  background-color: #fff;
+  border: 2px solid #b09a40;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -281,32 +252,32 @@ nav.navbar.justify-content-between {
 /* Add arrows to the left container (pointing right) */
 .left::before {
   content: " ";
-  height: 0;
+  height: 0px;
   position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
+  top: 27px;
+  width: 25px;
+  z-index: 2;
+  right: 0px;
+  border: medium solid #b09a40;
+  border-width: 1px 0 1px 1px;
+  background-color: #b09a40;
 }
 /* Add arrows to the right container (pointing left) */
 .right::before {
   content: " ";
-  height: 0;
+  height: 0px;
   position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+  top: 27px;
+  width: 25px;
+  z-index: 2;
+  left: 7px;
+  border: medium solid #b09a40;
+  border-width: 1px 0 1px 1px;
+  background-color: #b09a40;
 }
 /* Fix the circle for containers on the right side */
 .right::after {
-  left: -16px;
+  left: -8px;
 }
 /* The actual content */
 .content {
@@ -314,8 +285,8 @@ nav.navbar.justify-content-between {
   background-color: white;
   position: relative;
   border-radius: 6px;
+  padding-top: 1%;
 }
-
 /*FOOTER CSS*/
 .footer {
   width: 100%;
@@ -330,12 +301,10 @@ nav.navbar.justify-content-between {
   gap: 1rem;
   position: relative;
 }
-
 .footer-inner {
   margin-top: 8rem;
   width: 15%;
 }
-
 .icon-container {
   display: flex;
   flex-direction: row;
@@ -343,12 +312,10 @@ nav.navbar.justify-content-between {
   justify-content: space-around;
   padding-top: 2.5rem;
 }
-
 .footer-icon {
   height: 40px;
   width: 40px;
 }
-
 .copyRight {
   padding-top: 8rem;
   padding-bottom: 2.5rem;
@@ -356,22 +323,18 @@ nav.navbar.justify-content-between {
   font-size: 16px;
   opacity: 70%;
 }
-
 @media screen and (max-width: 1000px) {
   .heading-1 {
     font-size: 1.5rem;
   }
-
   .heading-2 {
     font-size: 0.8rem;
   }
-
   .heading-2-container {
     width: 90%;
     margin: 0 auto;
   }
 }
-
 @media only screen and (min-width: 300px) and (max-width: 600px) {
   .heading-1-container {
     width: 51%;
@@ -387,7 +350,6 @@ nav.navbar.justify-content-between {
     font-size: 5vw;
     margin-top: 5%;
   }
-
   .NFTContainer {
     flex-direction: column;
     width: 80%;
@@ -408,45 +370,36 @@ nav.navbar.justify-content-between {
   .NFTContainer {
     width: 80%;
   }
-
   .bannerImage {
     width: 100%;
     height: 50vh;
   }
-
   .bannerInnerImage {
     width: 60%;
     left: 21%;
   }
-
   /*for the navbar*/
   .left-nav-img {
     display: none;
   }
-
   .navbar {
     height: 3.5rem !important;
     flex-direction: column-reverse;
   }
-
   .left-nav {
     margin-left: 2rem;
     gap: 0.8rem;
   }
-
   .right-nav {
     margin-right: 1rem;
   }
-
   .left-nav-head {
     display: flex;
     gap: 0.8rem;
   }
-
   .navbar-brand {
     font-size: 12px !important;
   }
-
   .right-nav-desc {
     color: #b09a40;
     display: flex;
@@ -455,7 +408,6 @@ nav.navbar.justify-content-between {
     align-self: center;
     font-weight: bold;
   }
-
   .right-nav-body {
     /*height: 300px;*/
     padding: 0.3rem 0.3rem;
@@ -469,7 +421,6 @@ nav.navbar.justify-content-between {
     border-top-left-radius: 8px 9px;
     border-bottom-right-radius: 2px 2px;
   }
-
   .right-nav-body:before {
     display: none;
     content: "";
@@ -480,42 +431,97 @@ nav.navbar.justify-content-between {
     border-right: 8px solid #b09a40;
     width: 0;
   }
-
   .file-arrow {
     width: 12%;
     display: none;
   }
-
   .file-arrow-color {
     display: block;
     width: 12%;
   }
-
   /*FOOTER CSS*/
-
   .footer-inner {
     margin-top: 3rem;
     width: 50%;
   }
-
   .icon-container {
     width: 15%;
     gap: 1rem;
     padding-top: 1rem;
   }
-
   .footer-icon {
     height: 35px;
     width: 35px;
   }
-
   .copyRight {
     padding-top: 2rem;
     padding-bottom: 1rem;
     font-size: 10px;
   }
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  div.content h2,
+  p {
+    text-align: left !important;
+  }
+  .container::after {
+    left: -1.5%;
+  }
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  /* Make sure all circles are at the same spot */
+  .left::after,
+  .right::after {
+    left: 15px;
+  }
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+  .content {
+    width: 100%;
+  }
+  .container::after {
+    left: 10%;
+  }
+  .timeline::after {
+    left: 14%;
+  }
+  .container::before {
+    display: none;
+  }
 }
 
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  .container::after {
+    left: 12%;
+  }
+  .timeline::after {
+    left: 15%;
+  }
+  .container::before {
+    display: none;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+  .timeline::after {
+    left: 14.5%;
+  }
+  .container::after {
+    left: 12%;
+  }
+  .container::before {
+    display: none;
+  }
+}
 @media only screen and (min-width: 600px) and (max-width: 800px) {
   .heading-1-container {
     width: 51%;
@@ -534,7 +540,6 @@ nav.navbar.justify-content-between {
   .heading-2 {
     font-size: 2.8vw;
   }
-
   .NFTContainer {
     width: 80%;
     flex-direction: column;
@@ -543,16 +548,13 @@ nav.navbar.justify-content-between {
     width: 95%;
     position: relative;
   }
-
   .NFT-image {
     width: 80%;
   }
-
   .NFT-border {
     width: 80%;
     left: 8%;
   }
-
   .bannerImage {
     height: 70vh;
   }
@@ -568,29 +570,23 @@ nav.navbar.justify-content-between {
     top: 32%;
     width: 50%;
   }
-
   .left-nav {
     margin-left: 1.5rem;
     gap: 1rem;
   }
-
   .right-nav {
     margin-right: 1rem;
   }
-
   .left-nav-head {
     display: flex;
     gap: 1rem;
   }
-
   .navbar-brand {
     font-size: 16px !important;
   }
-
   .navbar {
     height: 5rem !important;
   }
-
   .right-nav-desc {
     color: #b09a40;
     display: flex;
@@ -599,7 +595,6 @@ nav.navbar.justify-content-between {
     align-self: center;
     font-weight: bold;
   }
-
   .right-nav-body {
     /*height: 300px;*/
     padding: 0.3rem 0.3rem;
@@ -613,7 +608,6 @@ nav.navbar.justify-content-between {
     border-top-left-radius: 8px 9px;
     border-bottom-right-radius: 2px 2px;
   }
-
   .right-nav-body:before {
     display: none;
     content: "";
@@ -624,28 +618,31 @@ nav.navbar.justify-content-between {
     border-right: 8px solid #b09a40;
     width: 0;
   }
-
   .file-arrow {
     width: 12%;
     display: none;
   }
-
   .file-arrow-color {
     display: block;
     width: 15%;
   }
   /* Place the timelime to the left */
-  .timeline::after {
-    left: 31px;
-  }
-
   /* Full-width containers */
+  .timeline::after {
+    left: 15%;
+  }
   .container {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
   }
-
+  div.content h2,
+  p {
+    text-align: left !important;
+  }
+  .container::after {
+    left: -1.5%;
+  }
   /* Make sure that all arrows are pointing leftwards */
   .container::before {
     left: 60px;
@@ -653,19 +650,35 @@ nav.navbar.justify-content-between {
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
   }
-
   /* Make sure all circles are at the same spot */
   .left::after,
   .right::after {
     left: 15px;
   }
-
   /* Make all right containers behave like the left ones */
   .right {
     left: 0%;
   }
 }
-
+@media only screen and (min-width: 573px) and (max-width: 600px) {
+  .container::after {
+    left: 4% !important;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 700px) {
+  .container::after {
+    left: 6.5%;
+  }
+  .timeline::after{
+    margin-left: 0px;
+    left: 18%;
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 800px) {
+  .container::after {
+    left: -3.5% !important;
+  }
+}
 @media only screen and (min-width: 800px) and (max-width: 1000px) {
   .heading-1-container {
     width: 51%;
@@ -681,42 +694,34 @@ nav.navbar.justify-content-between {
     font-size: 5vw;
     margin-top: 5%;
   }
-
   .bannerImage {
     height: 70vh;
   }
   .NFTContainer {
     width: 80%;
   }
-
   .bannerInnerImage {
     left: 32%;
     top: 32%;
     width: 40%;
   }
-
   .logo {
     width: 45%;
   }
-
   .left-nav {
     margin-left: 2rem;
     gap: 1rem;
   }
-
   .right-nav {
     margin-right: 2rem;
   }
-
   .left-nav-head {
     display: flex;
     gap: 1rem;
   }
-
   .navbar-brand {
     font-size: 16px !important;
   }
-
   .right-nav-desc {
     color: #b09a40;
     display: flex;
@@ -725,7 +730,6 @@ nav.navbar.justify-content-between {
     align-self: center;
     font-weight: bold;
   }
-
   .right-nav-body {
     /*height: 300px;*/
     padding: 0.3rem 0.3rem;
@@ -739,7 +743,6 @@ nav.navbar.justify-content-between {
     border-top-left-radius: 8px 9px;
     border-bottom-right-radius: 2px 2px;
   }
-
   .right-nav-body:before {
     display: none;
     content: "";
@@ -750,12 +753,10 @@ nav.navbar.justify-content-between {
     border-right: 8px solid #b09a40;
     width: 0;
   }
-
   .file-arrow {
     width: 12%;
     display: none;
   }
-
   .file-arrow-color {
     display: block;
     width: 15%;
@@ -771,25 +772,25 @@ nav.navbar.justify-content-between {
     margin-top: 3rem;
     width: 30%;
   }
-
   .icon-container {
     width: 15%;
     gap: 1rem;
     padding-top: 1rem;
   }
-
   .footer-icon {
     height: 35px;
     width: 35px;
   }
-
   .copyRight {
     padding-top: 2rem;
     padding-bottom: 1rem;
     font-size: 10px;
   }
+  .timeline {
+    width: 90%;
+    margin-left: -18%;
+  }
 }
-
 @media only screen and (min-width: 1000px) and (max-width: 1200px) {
   .heading-1-container {
     width: 51%;
@@ -805,7 +806,6 @@ nav.navbar.justify-content-between {
     font-size: 5vw;
     margin-top: 5%;
   }
-
   .bannerImage {
     height: 70vh;
   }
@@ -828,7 +828,6 @@ nav.navbar.justify-content-between {
     margin-top: 3rem;
     width: 30%;
   }
-
   .icon-container {
     width: 15%;
     gap: 1rem;
@@ -839,17 +838,23 @@ nav.navbar.justify-content-between {
     height: 35px;
     width: 35px;
   }
-
   .copyRight {
     padding-top: 2rem;
     padding-bottom: 1rem;
     font-size: 10px;
   }
+  .timeline {
+    width: 90%;
+    margin-left: -18%;
+  }
 }
-
-@media only screen and (min-width: 1200px) and (max-width: 1300px) {
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
   img.cirle {
     width: 9%;
     margin: 0% 0% 0% 22%;
+  }
+  .timeline {
+    width: 90%;
+    margin-left: -18%;
   }
 }
