@@ -374,6 +374,50 @@ nav.navbar.justify-content-between {
   font-size: 16px;
   opacity: 70%;
 }
+.FAQ-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 55%;
+  margin: 0 auto;
+}
+.FAQ-column {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.FAQ-button {
+  width: 400px;
+  height: 70px;
+}
+.FAQ-button-2 {
+  width: 400px;
+  height: 100px;
+}
+.FAQ-button-text {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+}
+.FAQ-button-text-2 {
+  position: absolute;
+  top: 10%;
+  left: 6%;
+  width: 100%;
+}
+.FAQ-button-container {
+  position: relative;
+  margin: 4% 0%;
+}
+.check-box {
+  position: absolute;
+  top: 23%;
+  left: 5%;
+}
+#rough{
+  margin-top: -31%;
+}
 @media screen and (max-width: 1000px) {
   .heading-1 {
     font-size: 1.5rem;
@@ -582,6 +626,32 @@ nav.navbar.justify-content-between {
     top: 44%;
     left: 48%;
   }
+  .FAQ-button {
+    width: 400px;
+    height: 70px;
+    margin: 2% 0%;
+  }
+  .FAQ-container {
+    width: 100%;
+  }
+  .FAQ-column{
+    width: 80%;
+  }
+  #rough{
+    margin-top: 0%;
+  }
+  .FAQ-button-text-2{
+    width: 90%;
+  }
+  .check-box{
+    top: 35%;
+  }
+  .FAQ-button-text{
+    top: 33%
+  }
+  .FAQ-button-container{
+    margin: 0%;
+  }
 }
 
 @media only screen and (min-width: 400px) and (max-width: 500px) {
@@ -594,6 +664,37 @@ nav.navbar.justify-content-between {
   .container::before {
     display: none;
   }
+  .FAQ-button {
+    width: 400px;
+    height: 70px;
+    margin: 4% 0%;
+  }
+  .FAQ-button {
+    width: 400px;
+    height: 70px;
+    margin: 2% 0%;
+  }
+  .FAQ-container {
+    width: 100%;
+  }
+  .FAQ-column{
+    width: 80%;
+  }
+  #rough{
+    margin-top: 0%;
+  }
+  .FAQ-button-text-2{
+    width: 90%;
+  }
+  .check-box{
+    top: 35%;
+  }
+  .FAQ-button-text{
+    top: 33%
+  }
+  .FAQ-button-container{
+    margin: 0%;
+  }
 }
 @media only screen and (min-width: 500px) and (max-width: 600px) {
   .timeline::after {
@@ -604,6 +705,35 @@ nav.navbar.justify-content-between {
   }
   .container::before {
     display: none;
+  }
+  .FAQ-container {
+    flex-direction: column;
+  }
+  .FAQ-button {
+    width: 400px;
+    height: 70px;
+    margin: 2% 0%;
+  }
+  .FAQ-container {
+    width: 100%;
+  }
+  .FAQ-column{
+    width: 80%;
+  }
+  #rough{
+    margin-top: 0%;
+  }
+  .FAQ-button-text-2{
+    width: 90%;
+  }
+  .check-box{
+    top: 35%;
+  }
+  .FAQ-button-text{
+    top: 33%
+  }
+  .FAQ-button-container{
+    margin: 0%;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 800px) {
@@ -750,6 +880,41 @@ nav.navbar.justify-content-between {
   /* Make all right containers behave like the left ones */
   .right {
     left: 0%;
+  }
+  .FAQ-container {
+    flex-direction: column;
+  }
+  .FAQ-button {
+    width: 545px;
+    height: 70px;
+    margin: 2% 0%;
+  }
+  .FAQ-button-2 {
+    width: 545px;
+    margin: 2% 0%;
+  }
+  .FAQ-container {
+    width: 100%;
+  }
+  .FAQ-column{
+    width: 80%;
+  }
+  #rough{
+    margin-top: 0%;
+  }
+  .FAQ-button-text-2{
+    width: 90%;
+    top: 25%;
+    left: 4%;
+  }
+  .check-box{
+    top: 35%;
+  }
+  .FAQ-button-text{
+    top: 33%
+  }
+  .FAQ-button-container{
+    margin: 0%;
   }
 }
 @media only screen and (min-width: 573px) and (max-width: 600px) {
