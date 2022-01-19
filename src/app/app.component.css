@@ -352,7 +352,7 @@ nav.navbar.justify-content-between {
 .copyRight {
   padding-top: 8rem;
   padding-bottom: 2.5rem;
-  color: #5389A2;
+  color: #5389a2;
   font-size: 16px;
   opacity: 70%;
 }
@@ -406,7 +406,7 @@ nav.navbar.justify-content-between {
     padding: 0% 2%;
   }
   .NFTContainer {
-    width: 100%;
+    width: 80%;
   }
 
   .bannerImage {
@@ -514,7 +514,6 @@ nav.navbar.justify-content-between {
     padding-bottom: 1rem;
     font-size: 10px;
   }
-
 }
 
 @media only screen and (min-width: 600px) and (max-width: 800px) {
@@ -635,6 +634,36 @@ nav.navbar.justify-content-between {
     display: block;
     width: 15%;
   }
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after,
+  .right::after {
+    left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1000px) {
@@ -656,7 +685,7 @@ nav.navbar.justify-content-between {
   .bannerImage {
     height: 70vh;
   }
-  .NFTContainer{
+  .NFTContainer {
     width: 80%;
   }
 
@@ -737,7 +766,7 @@ nav.navbar.justify-content-between {
   .NFTtext {
     padding: 0% 5%;
   }
-/*FOOTER*/
+  /*FOOTER*/
   .footer-inner {
     margin-top: 3rem;
     width: 30%;
@@ -780,7 +809,7 @@ nav.navbar.justify-content-between {
   .bannerImage {
     height: 70vh;
   }
-  .NFTContainer{
+  .NFTContainer {
     width: 80%;
   }
   .bannerInnerImage {
