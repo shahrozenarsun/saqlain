@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "JosefinSans-Regular";
+  src: local("JosefinSans-Regular"), url(./assets/fonts/JosefinSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "JosefinSans-semiBold";
+  src: local("JosefinSans-semiBold"), url(./assets/fonts/JosefinSans-SemiBold.ttf) format("truetype");
+}

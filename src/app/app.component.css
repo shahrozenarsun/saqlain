@@ -48,6 +48,7 @@ body {
   margin-right: 10rem;
 }
 .right-nav-desc {
+  font-family: 'JosefinSans-semiBold', serif;
   color: #ffffff;
   display: flex;
   margin-bottom: 0 !important;
@@ -86,11 +87,13 @@ body {
   margin: 5% 0;
 }
 .heading-1 {
+  font-family: JosefinSans-semiBold, Serif;
   font-size: 4rem;
   color: #b09a40;
   margin-top: 3%;
 }
 .heading-2 {
+  font-family: 'JosefinSans-Regular', serif;
   font-size: 1.3rem;
   color: #0a1c26;
   margin-top: 2%;
@@ -108,9 +111,15 @@ body {
 
 img.cirle {
   width: 15%;
-  left: 5%;
+  left: 12%;
   position: absolute;
-  /* margin: 0% 0% 0% 26%; */
+  /* margin:0% 0% 0% 26%; */
+}
+img.circle-2 {
+  margin: 0 0 0 16% !important;
+}
+img.circle-3 {
+  margin: 0 0 0 26% !important;
 }
 .NFTContainer {
   width: 80%;
@@ -141,6 +150,7 @@ img.cirle {
   top: -2%;
 }
 a.navbar-brand {
+  font-family: 'JosefinSans-Regular', serif;
   color: #5389a2 !important;
   font-size: 1.15rem;
 }
@@ -179,16 +189,25 @@ nav.navbar.justify-content-between {
   left: 10%;
 }
 .NFTtextHeading {
+  font-family: 'JosefinSans-semiBold', serif;
   color: #ccb248;
   font-size: 1.5vw;
 }
 .NFTtext {
+  font-family: 'JosefinSans-Regular', serif;
   color: #ffffff;
   margin: 2% 0%;
   font-size: 1vw;
   margin-left: -8px;
 }
-
+.content h2 {
+  font-family: 'JosefinSans-Regular', serif;
+  font-size: 18px;
+}
+.content p {
+  font-family: 'JosefinSans-semiBold', serif;
+  font-size: 18px;
+}
 .respImage {
   width: 55%;
 }
@@ -353,8 +372,8 @@ nav.navbar.justify-content-between {
   position: relative;
 }
 .footer-inner {
-  margin-top: 8rem;
-  width: 15%;
+  margin-top: 7rem;
+  width: 20%;
 }
 .icon-container {
   display: flex;
@@ -362,16 +381,18 @@ nav.navbar.justify-content-between {
   width: 15%;
   justify-content: space-around;
   padding-top: 2.5rem;
+  gap: 1rem;
 }
 .footer-icon {
   height: 40px;
   width: 40px;
 }
 .copyRight {
+  font-family: 'JosefinSans-Regular', serif;
   padding-top: 8rem;
   padding-bottom: 2.5rem;
   color: #5389a2;
-  font-size: 16px;
+  font-size: 12px;
   opacity: 70%;
 }
 .FAQ-container {
@@ -1185,8 +1206,17 @@ nav.navbar.justify-content-between {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
   img.cirle {
-    width: 9%;
-    margin: 0% 0% 0% 22%;
+    width: 13%;
+    margin: 0 0 0 -9%;
+  }
+  img.circle-1 {
+    margin: 0 0 0 -15% !important;
+  }
+  img.circle-2 {
+    margin: 0 0 0 8% !important;
+  }
+  img.circle-3 {
+    margin: 0 0 0 23% !important;
   }
   .timeline {
     width: 90%;
@@ -1199,6 +1229,7 @@ nav.navbar.justify-content-between {
 @media only screen and (min-width: 1499px) and (max-width: 2100px) {
   .timeline {
     width: 90%;
+    margin-left: 50px;
   }
 }
 
