@@ -104,7 +104,12 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 2% 0;
+  margin: 4% 0;
+}
+.corner {
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 .heading-1 {
   font-family: JosefinSans-semiBold, Serif;
@@ -254,6 +259,7 @@ nav.navbar.justify-content-between {
 }
 .Roadmap-button-container {
   display: flex;
+  background: #ffffff;
   flex-direction: row;
   border: 2px solid #b09a40;
   /* border-top-left-radius: 10px 10px; */
@@ -372,7 +378,7 @@ nav.navbar.justify-content-between {
   top: 27px;
   width: 25px;
   z-index: 2;
-  right: 0px;
+  right: 0;
   border: medium solid #b09a40;
   border-width: 1px 0 1px 1px;
   background-color: #b09a40;
@@ -554,6 +560,7 @@ nav.navbar.justify-content-between {
   width: 99%;
 }
 .faq-question-new {
+  /*background-image: url("../assets/faqCorners.svg");*/
   border: 2px solid #b09a40;
   color: black;
   padding: 0.8rem 1rem;
