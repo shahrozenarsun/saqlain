@@ -63,7 +63,7 @@
     </div>
   </div>
 </div>
-<div class="text-container">
+<div class="roadMapHeadContainer">
   <div class="heading-1-container">
     <img class="cirle circle-roapmap circle-2" src="assets/circle.png" alt=""/>
     <h1 class="heading-1">ROAD MAP</h1>
@@ -126,84 +126,68 @@
 </div>
 
 <!--FAQ CODE-->
-<div class="text-container">
+<div class="faqHeadContainer">
   <div class="heading-1-container">
     <img class="cirle circle-3" src="assets/circle.png" alt=""/>
     <h1 class="heading-1">FAQ</h1>
   </div>
-  <!--    <div class="FAQ-container">-->
-  <!--      <div class="FAQ-column">-->
-  <!--        <div class="FAQ-button-container faq-question" (click)="toggle()">-->
-  <!--          <img class="FAQ-button" src="assets/ButtonBorder.png"/>-->
-  <!--          <img class="check-box" src="assets/checkbox.png"/>-->
-  <!--          <p class="FAQ-button-text">When will the cloud city will launch?</p>-->
-  <!--        </div>-->
-  <!--        <div class="FAQ-button-container faq-answer collapsible" [@collapse]="collapsed">-->
-  <!--          <img class="FAQ-button-2" src="assets/buttonBorder100px.png"/>-->
-  <!--          <p class="FAQ-button-text-2">We have a very detailed roadmap that lays out our plans for the next 5 years.-->
-  <!--            The alpha launch is set for Q2 of 2022.</p>-->
-  <!--        </div>-->
-  <!--        <div class="FAQ-button-container  faq-question" >-->
-  <!--          <img class="FAQ-button" src="assets/ButtonBorder.png"/>-->
-  <!--          <img class="check-box" src="assets/checkbox2.png"/>-->
-  <!--          <p class="FAQ-button-text">Will the cloud city tokens support staking?</p>-->
-  <!--        </div>-->
-  <!--        <div class="FAQ-button-container  faq-question">-->
-  <!--          <img class="FAQ-button" src="assets/ButtonBorder.png"/>-->
-  <!--          <img class="check-box" src="assets/checkbox2.png"/>-->
-  <!--          <p class="FAQ-button-text">What are business enclaves?</p>-->
-  <!--        </div>-->
-  <!--      </div>-->
-  <!--      <div class="FAQ-column">-->
-  <!--        <div class="FAQ-button-container  faq-question" id="rough">-->
-  <!--          <img class="FAQ-button" src="assets/ButtonBorder.png"/>-->
-  <!--          <img class="check-box" src="assets/checkbox2.png"/>-->
-  <!--          <p class="FAQ-button-text">How can i earn on the cloud city metaverse?</p>-->
-  <!--        </div>-->
-  <!--        <div class="FAQ-button-container  faq-question">-->
-  <!--          <img class="FAQ-button" src="assets/ButtonBorder.png"/>-->
-  <!--          <img class="check-box" src="assets/checkbox2.png"/>-->
-  <!--          <p class="FAQ-button-text">Will the cloud city metaverse be a VR experience?</p>-->
-  <!--        </div>-->
-  <!--        <div class="FAQ-button-container faq-question">-->
-  <!--          <img class="FAQ-button" src="assets/ButtonBorder.png"/>-->
-  <!--          <img class="check-box" src="assets/checkbox2.png"/>-->
-  <!--          <p class="FAQ-button-text">What blockchain will host the metaverse?</p>-->
-  <!--        </div>-->
-  <!--      </div>-->
-  <!--    </div>-->
 </div>
 <div class="faq-container-new">
   <div class="row justify-content-center">
     <div class="col-xs-12 col-md-4">
       <div class="row justify-content-center">
         <div class="col-12">
-          <div class="faq-question-new" (click)="toggle(0)">
+          <div class="faq-question-new" (click)="collapse.toggle(); closeRest(0)" [attr.aria-expanded]="collapseArr[0].collapse"
+               aria-controls="collapseExample">
             <img class="collapsable-btn" src="assets/checkbox.png" alt="" *ngIf="!collapseArr[0].collapse"/>
             <img class="collapsable-btn" src="assets/checkbox2.png" alt="" *ngIf="collapseArr[0].collapse"/>
             <p class="faq-desc">When will the cloud city will launch?</p>
           </div>
-          <div class="faq-answer-new collapsible" [@collapse]="this.collapseArr[0].collapse">
-            <p>We have a very detailed roadmap that lays out our plan for the next 5 years.
-            The alpha launch is set for Q2 of 2022</p>
+          <div #collapse="ngbCollapse" [(ngbCollapse)]="collapseArr[0].collapse">
+            <div class="card faq-answer-new">
+              <div class="card-body">
+                <p>We have a very detailed roadmap that lays out our plan for the next 5 years.
+                  The alpha launch is set for Q2 of 2022.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div class="row justify-content-center">
         <div class="col-12">
-          <div class="faq-question-new">
-            <img class="collapsable-btn" src="assets/checkbox.png" alt="" *ngIf="collapseArr[1].collapse"/>
-            <img class="collapsable-btn" src="assets/checkbox2.png" alt="" *ngIf="!collapseArr[1].collapse"/>
+          <div class="faq-question-new" (click)="collapseOne.toggle(); closeRest(1)" [attr.aria-expanded]="collapseArr[1].collapse"
+               aria-controls="collapseExample">
+            <img class="collapsable-btn" src="assets/checkbox.png" alt="" *ngIf="!collapseArr[1].collapse"/>
+            <img class="collapsable-btn" src="assets/checkbox2.png" alt="" *ngIf="collapseArr[1].collapse"/>
             <p class="faq-desc">Will The Cloud City tokens support staking?</p>
           </div>
+          <div #collapseOne="ngbCollapse" [(ngbCollapse)]="collapseArr[1].collapse">
+            <div class="card faq-answer-new">
+              <div class="card-body">
+                <p>The platform will allow staking of both its DAO token (ASTRAL) and NFTs
+                  so holders can earn a passive income through staking.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="row justify-content-center">
         <div class="col-12">
-          <div class="faq-question-new">
-            <img class="collapsable-btn" src="assets/checkbox.png" alt="" *ngIf="collapseArr[2].collapse"/>
-            <img class="collapsable-btn" src="assets/checkbox2.png" alt="" *ngIf="!collapseArr[2].collapse"/>
+          <div class="faq-question-new" (click)="collapseTwo.toggle(); closeRest(2)" [attr.aria-expanded]="collapseArr[2].collapse"
+               aria-controls="collapseExample">
+            <img class="collapsable-btn" src="assets/checkbox.png" alt="" *ngIf="!collapseArr[2].collapse"/>
+            <img class="collapsable-btn" src="assets/checkbox2.png" alt="" *ngIf="collapseArr[2].collapse"/>
             <p class="faq-desc">What are Business Enclaves?</p>
+          </div>
+          <div #collapseTwo="ngbCollapse" [(ngbCollapse)]="collapseArr[2].collapse">
+            <div class="card faq-answer-new">
+              <div class="card-body">
+                <p>To achieve true Ready Player One experience we believe that citizen's should be able to make real
+                  life transactions on the metaverse. For that we have introduced a dedicated area for businesses
+                  to set up shop and be able to sell real world goods. We will integrate third party APIs of these
+                  businesses to make sure the experience is seamless.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -211,28 +195,60 @@
     <div class="col-md-4 col-sm-12">
       <div class="row justify-content-center">
         <div class="col-12">
-          <div class="faq-question-new">
-            <img class="collapsable-btn" src="assets/checkbox.png" alt="" *ngIf="collapseArr[3].collapse"/>
-            <img class="collapsable-btn" src="assets/checkbox2.png" alt="" *ngIf="!collapseArr[3].collapse"/>
+          <div class="faq-question-new" (click)="collapseThree.toggle(); closeRest(3)" [attr.aria-expanded]="collapseArr[3].collapse"
+               aria-controls="collapseExample">
+            <img class="collapsable-btn" src="assets/checkbox.png" alt="" *ngIf="!collapseArr[3].collapse"/>
+            <img class="collapsable-btn" src="assets/checkbox2.png" alt="" *ngIf="collapseArr[3].collapse"/>
             <p class="faq-desc">How can i earn on The Cloud City Metaverse?</p>
           </div>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="faq-question-new">
-            <img class="collapsable-btn" src="assets/checkbox.png" alt="" *ngIf="collapseArr[4].collapse"/>
-            <img class="collapsable-btn" src="assets/checkbox2.png" alt="" *ngIf="!collapseArr[4].collapse"/>
-            <p class="faq-desc">Will The Cloud City Metaverse be a VR experience?</p>
+          <div #collapseThree="ngbCollapse" [(ngbCollapse)]="collapseArr[3].collapse">
+            <div class="card faq-answer-new">
+              <div class="card-body">
+                <p>There are multiple income generation possibilities on The Cloud City Metaverse,
+                  the most common being through P2E games, others include; staking,
+                  trading NFTs, renting out land, setting up businesses and much more.
+                  We have a lot more planned for the future.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div class="row justify-content-center">
         <div class="col-12">
-          <div class="faq-question-new">
-            <img class="collapsable-btn" src="assets/checkbox.png" alt="" *ngIf="collapseArr[5].collapse"/>
-            <img class="collapsable-btn" src="assets/checkbox2.png" alt="" *ngIf="!collapseArr[5].collapse"/>
+          <div class="faq-question-new" (click)="collapseFour.toggle(); closeRest(4)" [attr.aria-expanded]="collapseArr[4].collapse"
+               aria-controls="collapseExample">
+            <img class="collapsable-btn" src="assets/checkbox.png" alt="" *ngIf="!collapseArr[4].collapse"/>
+            <img class="collapsable-btn" src="assets/checkbox2.png" alt="" *ngIf="collapseArr[4].collapse"/>
+            <p class="faq-desc">Will The Cloud City Metaverse be a VR experience?</p>
+          </div>
+          <div #collapseFour="ngbCollapse" [(ngbCollapse)]="collapseArr[4].collapse">
+            <div class="card faq-answer-new">
+              <div class="card-body">
+                <p>As much as we want this to be a VR experience,
+                  we believe that VR is still not the get go hardware for an average user.
+                  We are going to launch on PC with a download-able launcher. Mobile versions
+                  and VR are on our roadmap at a later stage.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="faq-question-new" (click)="collapseFive.toggle(); closeRest(5)" [attr.aria-expanded]="collapseArr[5].collapse"
+               aria-controls="collapseExample">
+            <img class="collapsable-btn" src="assets/checkbox.png" alt="" *ngIf="!collapseArr[5].collapse"/>
+            <img class="collapsable-btn" src="assets/checkbox2.png" alt="" *ngIf="collapseArr[5].collapse"/>
             <p class="faq-desc">What blockchain will host the metaverse?</p>
+          </div>
+          <div #collapseFive="ngbCollapse" [(ngbCollapse)]="collapseArr[5].collapse">
+            <div class="card faq-answer-new">
+              <div class="card-body">
+                <p>As of now the chosen blockchain is Solana,
+                  but our dev team is looking into DAO possibilities with BSC and Unreal Engine.
+                  If successful we will migrate to BSC.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -258,3 +274,4 @@
   </div>
   <p class='copyRight'>The Cloud City Metaverse is registered with NARSUN Studios</p>
 </div>
+
