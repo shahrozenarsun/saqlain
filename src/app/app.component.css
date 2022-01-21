@@ -806,6 +806,13 @@ nav.navbar.justify-content-between {
     height: 30px;
     top: 44%;
     left: 48%;
+    cursor: pointer;
+  }
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: auto;
   }
   .FAQ-button {
     width: 400px;

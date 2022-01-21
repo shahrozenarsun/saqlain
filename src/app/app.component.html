@@ -120,8 +120,8 @@
 <div class="video-cover">
   <div class="video-cover-desc">
     <img class="nft-cover" src="../assets/NFT.png" alt="">
-    <img class="nft-border" src="../assets/NFTborder.png" alt="">
-    <img class="play-button" src="../assets/playButton.svg" alt="">
+    <img class="nft-border" src="../assets/mainScreen.svg" alt="">
+    <img class="play-button" src="../assets/playButton.svg" alt="" (click)="onVideoClicked()">
   </div>
 </div>
 
@@ -137,7 +137,8 @@
     <div class="col-xs-12 col-md-4">
       <div class="row justify-content-center">
         <div class="col-12">
-          <div class="faq-question-new" (click)="collapse.toggle(); closeRest(0)" [attr.aria-expanded]="collapseArr[0].collapse"
+          <div class="faq-question-new" (click)="collapse.toggle(); closeRest(0)"
+               [attr.aria-expanded]="collapseArr[0].collapse"
                aria-controls="collapseExample">
             <img class="collapsable-btn" src="assets/checkbox.png" alt="" *ngIf="!collapseArr[0].collapse"/>
             <img class="collapsable-btn" src="assets/checkbox2.png" alt="" *ngIf="collapseArr[0].collapse"/>
@@ -155,7 +156,8 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-12">
-          <div class="faq-question-new" (click)="collapseOne.toggle(); closeRest(1)" [attr.aria-expanded]="collapseArr[1].collapse"
+          <div class="faq-question-new" (click)="collapseOne.toggle(); closeRest(1)"
+               [attr.aria-expanded]="collapseArr[1].collapse"
                aria-controls="collapseExample">
             <img class="collapsable-btn" src="assets/checkbox.png" alt="" *ngIf="!collapseArr[1].collapse"/>
             <img class="collapsable-btn" src="assets/checkbox2.png" alt="" *ngIf="collapseArr[1].collapse"/>
@@ -173,7 +175,8 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-12">
-          <div class="faq-question-new" (click)="collapseTwo.toggle(); closeRest(2)" [attr.aria-expanded]="collapseArr[2].collapse"
+          <div class="faq-question-new" (click)="collapseTwo.toggle(); closeRest(2)"
+               [attr.aria-expanded]="collapseArr[2].collapse"
                aria-controls="collapseExample">
             <img class="collapsable-btn" src="assets/checkbox.png" alt="" *ngIf="!collapseArr[2].collapse"/>
             <img class="collapsable-btn" src="assets/checkbox2.png" alt="" *ngIf="collapseArr[2].collapse"/>
@@ -195,7 +198,8 @@
     <div class="col-md-4 col-sm-12">
       <div class="row justify-content-center">
         <div class="col-12">
-          <div class="faq-question-new" (click)="collapseThree.toggle(); closeRest(3)" [attr.aria-expanded]="collapseArr[3].collapse"
+          <div class="faq-question-new" (click)="collapseThree.toggle(); closeRest(3)"
+               [attr.aria-expanded]="collapseArr[3].collapse"
                aria-controls="collapseExample">
             <img class="collapsable-btn" src="assets/checkbox.png" alt="" *ngIf="!collapseArr[3].collapse"/>
             <img class="collapsable-btn" src="assets/checkbox2.png" alt="" *ngIf="collapseArr[3].collapse"/>
@@ -215,7 +219,8 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-12">
-          <div class="faq-question-new" (click)="collapseFour.toggle(); closeRest(4)" [attr.aria-expanded]="collapseArr[4].collapse"
+          <div class="faq-question-new" (click)="collapseFour.toggle(); closeRest(4)"
+               [attr.aria-expanded]="collapseArr[4].collapse"
                aria-controls="collapseExample">
             <img class="collapsable-btn" src="assets/checkbox.png" alt="" *ngIf="!collapseArr[4].collapse"/>
             <img class="collapsable-btn" src="assets/checkbox2.png" alt="" *ngIf="collapseArr[4].collapse"/>
@@ -235,7 +240,8 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-12">
-          <div class="faq-question-new" (click)="collapseFive.toggle(); closeRest(5)" [attr.aria-expanded]="collapseArr[5].collapse"
+          <div class="faq-question-new" (click)="collapseFive.toggle(); closeRest(5)"
+               [attr.aria-expanded]="collapseArr[5].collapse"
                aria-controls="collapseExample">
             <img class="collapsable-btn" src="assets/checkbox.png" alt="" *ngIf="!collapseArr[5].collapse"/>
             <img class="collapsable-btn" src="assets/checkbox2.png" alt="" *ngIf="collapseArr[5].collapse"/>
@@ -275,3 +281,9 @@
   <p class='copyRight'>The Cloud City Metaverse is registered with NARSUN Studios</p>
 </div>
 
+
+<ng-template #videoPlayer>
+    <video id="video1" width="100%" height="100%" controls autoplay>
+      <source  src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" poster="assets/images/avatar.png" type="video/mp4">
+    </video>
+</ng-template>
