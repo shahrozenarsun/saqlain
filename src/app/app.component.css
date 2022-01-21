@@ -58,7 +58,7 @@ body {
   margin-right: 10rem;
 }
 .right-nav-desc {
-  font-family: 'JosefinSans-semiBold', serif;
+  font-family: "JosefinSans-semiBold", serif;
   color: #ffffff;
   display: flex;
   margin-bottom: 0 !important;
@@ -113,7 +113,7 @@ body {
   margin-top: 3%;
 }
 .heading-2 {
-  font-family: 'JosefinSans-Regular', serif;
+  font-family: "JosefinSans-Regular", serif;
   font-size: 1.3rem;
   color: #0a1c26;
   margin-top: 2%;
@@ -170,7 +170,7 @@ img.circle-3 {
   top: -2%;
 }
 a.navbar-brand {
-  font-family: 'JosefinSans-Regular', serif;
+  font-family: "JosefinSans-Regular", serif;
   color: #5389a2 !important;
   font-size: 1.15rem;
 }
@@ -210,12 +210,12 @@ nav.navbar.justify-content-between {
   left: 10%;
 }
 .NFTtextHeading {
-  font-family: 'JosefinSans-semiBold', serif;
+  font-family: "JosefinSans-semiBold", serif;
   color: #ccb248;
   font-size: 1.7vw;
 }
 .NFTtext {
-  font-family: 'JosefinSans-Regular', serif;
+  font-family: "JosefinSans-Regular", serif;
   color: #ffffff;
   margin: 2% 0%;
   font-size: 1.2vw;
@@ -223,11 +223,11 @@ nav.navbar.justify-content-between {
   padding: 0% 4%;
 }
 .content h2 {
-  font-family: 'JosefinSans-semiBold', serif;
+  font-family: "JosefinSans-semiBold", serif;
   font-size: 18px;
 }
 .content p {
-  font-family: 'JosefinSans-Regular', serif;
+  font-family: "JosefinSans-Regular", serif;
   font-size: 18px;
 }
 .respImage {
@@ -256,16 +256,29 @@ nav.navbar.justify-content-between {
   display: flex;
   flex-direction: row;
   border: 2px solid #b09a40;
-  border-top-left-radius: 10px 10px;
+  /* border-top-left-radius: 10px 10px; */
   width: 13rem;
   height: 3rem;
   color: #b09a40;
   gap: 1rem;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+.traingle {
+  width: 20px;
+  height: 17.9px;
+  position: absolute;
+  background-color: #fff;
+  border-right: 2.14px solid #b09a40;
+  top: -10.3px;
+  left: -11px;
+  transform: rotate(45deg);
+  border-radius: 0px 1px 1px 0px;
 }
 .road-map-desc {
-  font-family: 'JosefinSans-semiBold', serif;
+  font-family: "JosefinSans-semiBold", serif;
   align-self: center;
   align-content: center;
   vertical-align: center;
@@ -452,7 +465,7 @@ nav.navbar.justify-content-between {
   width: 40px;
 }
 .copyRight {
-  font-family: 'JosefinSans-Regular', serif;
+  font-family: "JosefinSans-Regular", serif;
   padding-top: 5rem;
   padding-bottom: 2.5rem;
   color: #5389a2;
@@ -497,7 +510,7 @@ nav.navbar.justify-content-between {
   width: 85%;
   white-space: nowrap;
   font-size: 14px;
-  font-family: 'JosefinSans-Regular', serif;
+  font-family: "JosefinSans-Regular", serif;
   font-weight: bold;
 }
 .FAQ-button-text-2 {
@@ -506,7 +519,7 @@ nav.navbar.justify-content-between {
   left: 5%;
   text-align: left;
   width: 85%;
-  font-family: 'JosefinSans-Regular', serif;
+  font-family: "JosefinSans-Regular", serif;
 }
 .FAQ-button-container {
   position: relative;
@@ -530,12 +543,12 @@ nav.navbar.justify-content-between {
 .faq-question-new {
   border: 2px solid #b09a40;
   color: black;
-  padding: .8rem 1rem;
+  padding: 0.8rem 1rem;
   border-top-left-radius: 10px 10px;
   border-bottom-right-radius: 10px 10px;
   display: flex;
   flex-direction: row;
-  gap: .5rem;
+  gap: 0.5rem;
   align-items: center;
   justify-content: start;
   margin-top: 1rem;
@@ -545,11 +558,11 @@ nav.navbar.justify-content-between {
 .faq-answer-new {
   border: 2px solid #b09a40;
   color: black;
-  padding: .8rem 2rem !important;
+  padding: 0.8rem 2rem !important;
   border-top-right-radius: 10px 10px;
   display: flex;
   flex-direction: row;
-  gap: .5rem;
+  gap: 0.5rem;
   align-items: center;
   justify-content: start;
   /*margin-top: 1rem;*/
@@ -559,11 +572,11 @@ nav.navbar.justify-content-between {
   margin-bottom: 0 !important;
 }
 .faq-answer-new p {
-  font-family: 'JosefinSans-Regular', serif;
+  font-family: "JosefinSans-Regular", serif;
   margin-bottom: 0 !important;
 }
 .faq-desc {
-  font-family: 'JosefinSans-Regular', serif;
+  font-family: "JosefinSans-Regular", serif;
   font-size: 16px;
 }
 .collapsable-btn {
@@ -596,24 +609,24 @@ nav.navbar.justify-content-between {
     flex-direction: column;
   }
 
-  .FAQ-button{
+  .FAQ-button {
     width: 320px !important;
   }
 
-  .FAQ-button-2{
+  .FAQ-button-2 {
     width: 320px !important;
     height: 14vh;
   }
 
-  .FAQ-button-text{
+  .FAQ-button-text {
     font-size: 14px;
-    font-family: 'JosefinSans-Regular', serif;
+    font-family: "JosefinSans-Regular", serif;
     left: 16%;
     top: 38% !important;
   }
 
-  .FAQ-button-text-2{
-    font-family: 'JosefinSans-Regular', serif;
+  .FAQ-button-text-2 {
+    font-family: "JosefinSans-Regular", serif;
     font-size: 14px;
     width: 100%;
     top: 22%;
@@ -1301,7 +1314,7 @@ nav.navbar.justify-content-between {
     top: 25%;
     left: 4%;
   }
-  .FAQ-button-text{
+  .FAQ-button-text {
     font-weight: bold;
     font-size: 16px;
   }
@@ -1379,7 +1392,7 @@ nav.navbar.justify-content-between {
     width: 90%;
     margin-left: -15%;
   }
-  .FAQ-container{
+  .FAQ-container {
     width: 80%;
   }
 }
@@ -1401,7 +1414,7 @@ nav.navbar.justify-content-between {
     width: 90%;
     margin-left: -18%;
   }
-  .FAQ-container{
+  .FAQ-container {
     width: 70%;
   }
 }
