@@ -4,9 +4,9 @@
       <img class="logo" src="assets/navLogo.png" alt="" />
     </div>
     <div class="left-nav-head">
-      <a class="navbar-brand">About</a>
-      <a class="navbar-brand">Roadmap</a>
-      <a class="navbar-brand">FAQ's</a>
+      <a href="#about" class="navbar-brand">About</a>
+      <a href="#roadMap" class="navbar-brand">Roadmap</a>
+      <a href="#faq" class="navbar-brand">FAQ's</a>
     </div>
   </div>
   <div class="right-nav">
@@ -22,7 +22,7 @@
   <img src="assets/BannerImage.png" alt="" class="bannerImage">
   <img src="assets/BannerCenterImage.png" alt="" class="bannerInnerImage" />
 </div>
-<div class="text-container">
+<div #about id="about" class="text-container">
   <div class="heading-1-container">
     <img class="cirle circle-1" src="assets/circle.png" alt="" />
     <h1 class="heading-1">WHAT IS CLOUD CITY</h1>
@@ -63,7 +63,7 @@
     </div>
   </div>
 </div>
-<div class="roadMapHeadContainer">
+<div id="roadMap" class="roadMapHeadContainer">
   <div class="heading-1-container">
     <img class="cirle circle-roapmap circle-2" src="assets/circle.png" alt="" />
     <h1 class="heading-1">ROAD MAP</h1>
@@ -134,7 +134,7 @@
 </div>
 
 <!--FAQ CODE-->
-<div class="faqHeadContainer">
+<div id="faq" class="faqHeadContainer">
   <div class="heading-1-container">
     <img class="cirle circle-3" src="assets/circle.png" alt="" />
     <h1 class="heading-1">FAQ</h1>
@@ -292,22 +292,23 @@
   <img class="footer-inner" src="assets/BannerCenterImage.png" alt="" />
   <div class="icon-container">
     <a href="https://facebook.com/cloudcitymeta">
-      <img class="footer-icon" src="assets/facebook.png" alt="" />
+      <img class="footer-icon" src="assets/facebook.png" alt="" target="_blank"/>
     </a>
     <a href="https://twitter.com/the_cloudcity">
-      <img class="footer-icon" src="assets/twitter.png" alt="" />
+      <img class="footer-icon" src="assets/twitter.png" alt="" target="_blank"/>
     </a>
     <a href="">
-      <img class="footer-icon" src="assets/youtube.png" alt="" />
+      <img class="footer-icon" src="assets/youtube.png" alt="" target="_blank"/>
+    </a>
+    <a href="https://discord.gg/JHcr7FEktZ">
+      <img class="footer-icon" src="assets/Discord-Logo.png" alt="" target="_blank" />
     </a>
     <a href="https://t.me/TheCloudCityMetaverse">
-      <img class="footer-icon" src="assets/telegram.png" alt="" />
+      <img class="footer-icon" src="assets/telegram.png" alt="" target="_blank" />
     </a>
   </div>
   <p class='copyRight'>The Cloud City Metaverse is registered with NARSUN Studios</p>
 </div>
-
-
 <ng-template #videoPlayer>
   <div class="d-flex justify-content-center">
       <video id="video1" controls autoplay>

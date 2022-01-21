@@ -182,6 +182,7 @@ a.navbar-brand {
   font-family: "JosefinSans-Regular", serif;
   color: #5389a2 !important;
   font-size: 1.15rem;
+  cursor: pointer;
 }
 .logo {
   width: 50%;
