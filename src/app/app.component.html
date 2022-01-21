@@ -116,79 +116,139 @@
     </div>
   </div>
 </div>
-  <!--video code-->
-  <div class="video-cover">
-    <div class="video-cover-desc">
-      <img class="nft-cover" src="../assets/NFT.png" alt="">
-      <img class="nft-border" src="../assets/NFTborder.png" alt="">
-      <img class="play-button" src="../assets/playButton.svg" alt="">
-    </div>
+<!--video code-->
+<div class="video-cover">
+  <div class="video-cover-desc">
+    <img class="nft-cover" src="../assets/NFT.png" alt="">
+    <img class="nft-border" src="../assets/NFTborder.png" alt="">
+    <img class="play-button" src="../assets/playButton.svg" alt="">
   </div>
+</div>
 
-  <!--FAQ CODE-->
-  <div class="text-container">
-    <div class="heading-1-container">
-      <img class="cirle circle-3" src="assets/circle.png" alt=""/>
-      <h1 class="heading-1">FAQ</h1>
-    </div>
-    <div class="FAQ-container">
-      <div class="FAQ-column">
-        <div class="FAQ-button-container faq-question">
-          <img class="FAQ-button" src="assets/ButtonBorder.png"/>
-          <img class="check-box" src="assets/checkbox.png"/>
-          <p class="FAQ-button-text">When will the cloud city will launch?</p>
-        </div>
-        <div class="FAQ-button-container faq-answer">
-          <img class="FAQ-button-2" src="assets/buttonBorder100px.png"/>
-          <p class="FAQ-button-text-2">We have a very detailed roadmap that lays out our plans for the next 5 years.
-            The alpha launch is set for Q2 of 2022.</p>
-        </div>
-        <div class="FAQ-button-container  faq-question">
-          <img class="FAQ-button" src="assets/ButtonBorder.png"/>
-          <img class="check-box" src="assets/checkbox2.png"/>
-          <p class="FAQ-button-text">Will the cloud city tokens support staking?</p>
-        </div>
-        <div class="FAQ-button-container  faq-question">
-          <img class="FAQ-button" src="assets/ButtonBorder.png"/>
-          <img class="check-box" src="assets/checkbox2.png"/>
-          <p class="FAQ-button-text">What are business enclaves?</p>
+<!--FAQ CODE-->
+<div class="text-container">
+  <div class="heading-1-container">
+    <img class="cirle circle-3" src="assets/circle.png" alt=""/>
+    <h1 class="heading-1">FAQ</h1>
+  </div>
+  <!--    <div class="FAQ-container">-->
+  <!--      <div class="FAQ-column">-->
+  <!--        <div class="FAQ-button-container faq-question" (click)="toggle()">-->
+  <!--          <img class="FAQ-button" src="assets/ButtonBorder.png"/>-->
+  <!--          <img class="check-box" src="assets/checkbox.png"/>-->
+  <!--          <p class="FAQ-button-text">When will the cloud city will launch?</p>-->
+  <!--        </div>-->
+  <!--        <div class="FAQ-button-container faq-answer collapsible" [@collapse]="collapsed">-->
+  <!--          <img class="FAQ-button-2" src="assets/buttonBorder100px.png"/>-->
+  <!--          <p class="FAQ-button-text-2">We have a very detailed roadmap that lays out our plans for the next 5 years.-->
+  <!--            The alpha launch is set for Q2 of 2022.</p>-->
+  <!--        </div>-->
+  <!--        <div class="FAQ-button-container  faq-question" >-->
+  <!--          <img class="FAQ-button" src="assets/ButtonBorder.png"/>-->
+  <!--          <img class="check-box" src="assets/checkbox2.png"/>-->
+  <!--          <p class="FAQ-button-text">Will the cloud city tokens support staking?</p>-->
+  <!--        </div>-->
+  <!--        <div class="FAQ-button-container  faq-question">-->
+  <!--          <img class="FAQ-button" src="assets/ButtonBorder.png"/>-->
+  <!--          <img class="check-box" src="assets/checkbox2.png"/>-->
+  <!--          <p class="FAQ-button-text">What are business enclaves?</p>-->
+  <!--        </div>-->
+  <!--      </div>-->
+  <!--      <div class="FAQ-column">-->
+  <!--        <div class="FAQ-button-container  faq-question" id="rough">-->
+  <!--          <img class="FAQ-button" src="assets/ButtonBorder.png"/>-->
+  <!--          <img class="check-box" src="assets/checkbox2.png"/>-->
+  <!--          <p class="FAQ-button-text">How can i earn on the cloud city metaverse?</p>-->
+  <!--        </div>-->
+  <!--        <div class="FAQ-button-container  faq-question">-->
+  <!--          <img class="FAQ-button" src="assets/ButtonBorder.png"/>-->
+  <!--          <img class="check-box" src="assets/checkbox2.png"/>-->
+  <!--          <p class="FAQ-button-text">Will the cloud city metaverse be a VR experience?</p>-->
+  <!--        </div>-->
+  <!--        <div class="FAQ-button-container faq-question">-->
+  <!--          <img class="FAQ-button" src="assets/ButtonBorder.png"/>-->
+  <!--          <img class="check-box" src="assets/checkbox2.png"/>-->
+  <!--          <p class="FAQ-button-text">What blockchain will host the metaverse?</p>-->
+  <!--        </div>-->
+  <!--      </div>-->
+  <!--    </div>-->
+</div>
+<div class="faq-container-new">
+  <div class="row justify-content-center">
+    <div class="col-xs-12 col-md-4">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="faq-question-new" (click)="toggle(0)">
+            <img class="collapsable-btn" src="assets/checkbox.png" alt=""/>
+            <p class="faq-desc">When will the cloud city will launch?</p>
+          </div>
+          <div class="faq-answer-new collapsible" [@collapse]="this.collapseArr[0].collapse">
+            <p>We have a very detailed roadmap that lays out our plan for the next 5 years.
+            The alpha launch is set for Q2 of 2022</p>
+          </div>
         </div>
       </div>
-      <div class="FAQ-column">
-        <div class="FAQ-button-container  faq-question" id="rough">
-          <img class="FAQ-button" src="assets/ButtonBorder.png"/>
-          <img class="check-box" src="assets/checkbox2.png"/>
-          <p class="FAQ-button-text">How can i earn on the cloud city metaverse?</p>
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="faq-question-new">
+            <img class="collapsable-btn" src="assets/checkbox.png" alt=""/>
+            <p class="faq-desc">Will The Cloud City tokens support staking?</p>
+          </div>
         </div>
-        <div class="FAQ-button-container  faq-question">
-          <img class="FAQ-button" src="assets/ButtonBorder.png"/>
-          <img class="check-box" src="assets/checkbox2.png"/>
-          <p class="FAQ-button-text">Will the cloud city metaverse be a VR experience?</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="faq-question-new">
+            <img class="collapsable-btn" src="assets/checkbox.png" alt=""/>
+            <p class="faq-desc">What are Business Enclaves?</p>
+          </div>
         </div>
-        <div class="FAQ-button-container faq-question">
-          <img class="FAQ-button" src="assets/ButtonBorder.png"/>
-          <img class="check-box" src="assets/checkbox2.png"/>
-          <p class="FAQ-button-text">What blockchain will host the metaverse?</p>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-12">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="faq-question-new">
+            <img class="collapsable-btn" src="assets/checkbox.png" alt=""/>
+            <p class="faq-desc">How can i earn on The Cloud City Metaverse?</p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="faq-question-new">
+            <img class="collapsable-btn" src="assets/checkbox.png" alt=""/>
+            <p class="faq-desc">Will The Cloud City Metaverse be a VR experience?</p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="faq-question-new">
+            <img class="collapsable-btn" src="assets/checkbox.png" alt=""/>
+            <p class="faq-desc">What blockchain will host the metaverse?</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <!--footer code-->
-  <div class="footer">
-    <img class="footer-inner" src="assets/BannerCenterImage.png" alt=""/>
-    <div class="icon-container">
-      <a href="https://facebook.com/cloudcitymeta">
-        <img class="footer-icon" src="assets/facebook.png" alt=""/>
-      </a>
-      <a href="https://twitter.com/the_cloudcity">
-        <img class="footer-icon" src="assets/twitter.png" alt=""/>
-      </a>
-      <a href="">
-        <img class="footer-icon" src="assets/youtube.png" alt=""/>
-      </a>
-      <a href="https://t.me/TheCloudCityMetaverse">
-        <img class="footer-icon" src="assets/telegram.png" alt=""/>
-      </a>
-    </div>
-    <p class='copyRight'>The Cloud City Metaverse is registered with NARSUN Studios</p>
+</div>
+<!--footer code-->
+<div class="footer">
+  <img class="footer-inner" src="assets/BannerCenterImage.png" alt=""/>
+  <div class="icon-container">
+    <a href="https://facebook.com/cloudcitymeta">
+      <img class="footer-icon" src="assets/facebook.png" alt=""/>
+    </a>
+    <a href="https://twitter.com/the_cloudcity">
+      <img class="footer-icon" src="assets/twitter.png" alt=""/>
+    </a>
+    <a href="">
+      <img class="footer-icon" src="assets/youtube.png" alt=""/>
+    </a>
+    <a href="https://t.me/TheCloudCityMetaverse">
+      <img class="footer-icon" src="assets/telegram.png" alt=""/>
+    </a>
   </div>
+  <p class='copyRight'>The Cloud City Metaverse is registered with NARSUN Studios</p>
+</div>
