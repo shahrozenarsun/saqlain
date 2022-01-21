@@ -179,7 +179,8 @@
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="faq-question-new" (click)="toggle(0)">
-            <img class="collapsable-btn" src="assets/checkbox.png" alt=""/>
+            <img class="collapsable-btn" src="assets/checkbox.png" alt="" *ngIf="!collapseArr[0].collapse"/>
+            <img class="collapsable-btn" src="assets/checkbox2.png" alt="" *ngIf="collapseArr[0].collapse"/>
             <p class="faq-desc">When will the cloud city will launch?</p>
           </div>
           <div class="faq-answer-new collapsible" [@collapse]="this.collapseArr[0].collapse">
@@ -191,7 +192,8 @@
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="faq-question-new">
-            <img class="collapsable-btn" src="assets/checkbox.png" alt=""/>
+            <img class="collapsable-btn" src="assets/checkbox.png" alt="" *ngIf="collapseArr[1].collapse"/>
+            <img class="collapsable-btn" src="assets/checkbox2.png" alt="" *ngIf="!collapseArr[1].collapse"/>
             <p class="faq-desc">Will The Cloud City tokens support staking?</p>
           </div>
         </div>
@@ -199,7 +201,8 @@
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="faq-question-new">
-            <img class="collapsable-btn" src="assets/checkbox.png" alt=""/>
+            <img class="collapsable-btn" src="assets/checkbox.png" alt="" *ngIf="collapseArr[2].collapse"/>
+            <img class="collapsable-btn" src="assets/checkbox2.png" alt="" *ngIf="!collapseArr[2].collapse"/>
             <p class="faq-desc">What are Business Enclaves?</p>
           </div>
         </div>
@@ -209,7 +212,8 @@
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="faq-question-new">
-            <img class="collapsable-btn" src="assets/checkbox.png" alt=""/>
+            <img class="collapsable-btn" src="assets/checkbox.png" alt="" *ngIf="collapseArr[3].collapse"/>
+            <img class="collapsable-btn" src="assets/checkbox2.png" alt="" *ngIf="!collapseArr[3].collapse"/>
             <p class="faq-desc">How can i earn on The Cloud City Metaverse?</p>
           </div>
         </div>
@@ -217,7 +221,8 @@
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="faq-question-new">
-            <img class="collapsable-btn" src="assets/checkbox.png" alt=""/>
+            <img class="collapsable-btn" src="assets/checkbox.png" alt="" *ngIf="collapseArr[4].collapse"/>
+            <img class="collapsable-btn" src="assets/checkbox2.png" alt="" *ngIf="!collapseArr[4].collapse"/>
             <p class="faq-desc">Will The Cloud City Metaverse be a VR experience?</p>
           </div>
         </div>
@@ -225,7 +230,8 @@
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="faq-question-new">
-            <img class="collapsable-btn" src="assets/checkbox.png" alt=""/>
+            <img class="collapsable-btn" src="assets/checkbox.png" alt="" *ngIf="collapseArr[5].collapse"/>
+            <img class="collapsable-btn" src="assets/checkbox2.png" alt="" *ngIf="!collapseArr[5].collapse"/>
             <p class="faq-desc">What blockchain will host the metaverse?</p>
           </div>
         </div>

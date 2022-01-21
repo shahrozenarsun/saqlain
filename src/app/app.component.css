@@ -511,6 +511,7 @@ nav.navbar.justify-content-between {
   align-items: center;
   justify-content: start;
   margin-top: 1rem;
+  cursor: pointer;
 }
 .faq-answer-new {
   border: 2px solid #b09a40;
@@ -537,8 +538,8 @@ nav.navbar.justify-content-between {
   font-size: 16px;
 }
 .collapsable-btn {
-  width: 7%;
-  height: 7%;
+  width: 6%;
+  height: 6%;
 }
 .differ {
   margin-top: 1rem;

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {animate, AUTO_STYLE, state, style, transition, trigger} from "@angular/animations";
 
-let DEFAULT_DURATION = 300;
+let DEFAULT_DURATION = 250;
 
 @Component({
   selector: 'app-root',
@@ -10,7 +10,7 @@ let DEFAULT_DURATION = 300;
   animations: [
     trigger('collapse', [
       state('false', style({ height: AUTO_STYLE, visibility: AUTO_STYLE })),
-      state('true', style({ height: '0', visibility: 'hidden' })),
+      state('true', style({ height: '0', display: 'none' })),
       transition('false => true', animate(DEFAULT_DURATION + 'ms ease-in')),
       transition('true => false', animate(DEFAULT_DURATION + 'ms ease-out'))
     ])
@@ -21,7 +21,7 @@ export class AppComponent {
   collapsed = false;
   collapseArr = [
     {
-      collapse: true
+      collapse: false
     },
     {
       collapse: false
