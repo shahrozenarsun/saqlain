@@ -8,3 +8,13 @@
   font-family: "JosefinSans-semiBold";
   src: local("JosefinSans-semiBold"), url(./assets/fonts/JosefinSans-SemiBold.ttf) format("truetype");
 }
+
+.modal-content {
+  background-color: rgba(0, 0, 0, 0) !important;
+  border: none;
+}
+
+.modal-backdrop.fade.show {
+  height: 100%;
+  width: 100%;
+}
