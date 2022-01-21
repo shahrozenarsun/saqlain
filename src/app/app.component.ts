@@ -51,4 +51,7 @@ export class AppComponent {
         centered: true
       });
   }
+  openWhitePaper(): void {
+    window.open('https://cloudcitymeta.com/white-paper.pdf', '_blank');
+  }
 }

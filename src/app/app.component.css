@@ -63,6 +63,7 @@ body {
   display: flex;
   margin-bottom: 0 !important;
   align-self: center;
+  cursor: pointer;
 }
 .right-nav-body {
   /*height: 300px;*/
@@ -85,9 +86,11 @@ body {
 }
 .file-arrow {
   width: 16%;
+  cursor: pointer;
 }
 .file-arrow-color {
   display: none;
+  cursor: pointer;
 }
 .text-container {
   width: 100%;
@@ -414,6 +417,7 @@ nav.navbar.justify-content-between {
   position: absolute;
   top: 48%;
   left: 62%;
+  cursor: pointer;
 }
 /*FOOTER CSS*/
 .footer {
