@@ -277,6 +277,19 @@ nav.navbar.justify-content-between {
   transform: rotate(45deg);
   border-radius: 0px 1px 1px 0px;
 }
+
+.traingle-small {
+  width: 8px;
+  height: 9px;
+  position: absolute;
+  background-color: #fff;
+  border-left: 2.14px solid #b09a40;
+  bottom: -4.8px;
+  right: -4.1px;
+  transform: rotate(45deg);
+  border-radius: 0px 0px 0px 0px;
+}
+
 .road-map-desc {
   font-family: "JosefinSans-semiBold", serif;
   align-self: center;
@@ -544,8 +557,8 @@ nav.navbar.justify-content-between {
   border: 2px solid #b09a40;
   color: black;
   padding: 0.8rem 1rem;
-  border-top-left-radius: 10px 10px;
-  border-bottom-right-radius: 10px 10px;
+  /* border-top-left-radius: 10px 10px;
+  border-bottom-right-radius: 10px 10px; */
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
@@ -554,6 +567,7 @@ nav.navbar.justify-content-between {
   margin-top: 1rem;
   cursor: pointer;
   margin-bottom: 0.6rem;
+  position: relative;
 }
 .faq-answer-new {
   border: 2px solid #b09a40;
