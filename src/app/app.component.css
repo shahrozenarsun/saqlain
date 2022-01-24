@@ -18,6 +18,10 @@ video {
   height: 32rem !important;
   width: 58rem !important;
 }
+iframe {
+  height: 32rem !important;
+  width: 58rem !important;
+}
 .card {
   padding: 0 !important;
 }
@@ -648,6 +652,10 @@ nav.navbar.justify-content-between {
     height: 13rem !important;
     width: 100% !important;
   }
+  iframe {
+    height: 13rem !important;
+    width: 100% !important;
+  }
   .FAQ-button-text {
     font-size: 14px;
     font-family: "JosefinSans-Regular", serif;
@@ -1182,6 +1190,10 @@ nav.navbar.justify-content-between {
     position: relative;
   }
   video {
+    height: 28rem !important;
+    width: 44rem !important;
+  }
+  iframe {
     height: 28rem !important;
     width: 44rem !important;
   }
