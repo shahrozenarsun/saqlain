@@ -14,6 +14,9 @@ body {
   overflow: hidden;
   display: none;
 }
+/*.left-nav-head a:active {*/
+/*  color: #b09a40;*/
+/*}*/
 video {
   height: 32rem !important;
   width: 58rem !important;
