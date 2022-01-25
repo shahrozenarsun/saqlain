@@ -114,7 +114,7 @@ iframe {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 4% 0;
+  margin: 8% 0;
 }
 .corner {
   position: fixed;
@@ -685,9 +685,12 @@ nav.navbar.justify-content-between {
 
   img.cirle {
     width: 23%;
-    left: -4%;
+    left: -5%;
     top: -18%;
     position: absolute;
+  }
+  img.circle-2 {
+    left: 4% !important;
   }
 
   .heading-1 {
