@@ -116,6 +116,9 @@ iframe {
   text-align: center;
   margin: 8% 0;
 }
+.roadmap-Mobile {
+  display: none;
+}
 .corner {
   position: fixed;
   top: 0;
@@ -631,6 +634,12 @@ nav.navbar.justify-content-between {
   }
 }
 @media only screen and (min-width: 300px) and (max-width: 600px) {
+  .timeline {
+    display: none;
+  }
+  .roadmap-Mobile {
+    display: block;
+  }
   .heading-1-container {
     width: 51%;
     margin: 0 auto;
@@ -649,6 +658,9 @@ nav.navbar.justify-content-between {
   }
   .NFT {
     margin-top: 1rem;
+  }
+  .NFT-one {
+    margin-top: 0 !important;
   }
 
   .FAQ-button-2 {
@@ -690,9 +702,14 @@ nav.navbar.justify-content-between {
     position: absolute;
   }
   img.circle-2 {
-    left: 4% !important;
+    left: 6% !important;
   }
-
+  img.circle-3 {
+    left: 8% !important;
+  }
+  .roadMapHeadContainer {
+    margin: 10% 0;
+  }
   .heading-1 {
     font-size: 5vw;
     margin-top: 5%;
@@ -859,10 +876,17 @@ nav.navbar.justify-content-between {
   }
   /*VIDEO COVER*/
   .video-cover {
+    margin-top: 3.5rem;
+    margin-bottom: 1rem;
+  }
+  .faqHeadContainer {
     margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
 
+  .faq-container-new  {
+    margin-bottom: 3rem;
+  }
   .video-cover-desc {
     width: 100%;
     display: flex;
@@ -917,6 +941,39 @@ nav.navbar.justify-content-between {
   }
   .FAQ-button-container {
     margin: 0%;
+  }
+  /*ROADMAP MOBILE */
+  .roadmap-Mobile {
+    margin: 1rem 2rem;
+  }
+  .roadMapSection {
+    margin-top: .3rem;
+    position: relative;
+  }
+  .roadMapSectionImg {
+    position: absolute;
+    left: 0;
+    top: 8%;
+  }
+  .roadMapSectionImgEnd {
+    position: absolute;
+    left: 0;
+    top: 24%;
+  }
+  .roadMapSectionHeading {
+    margin-left: 2rem;
+    font-family: 'JosefinSans-Regular', serif;
+    font-size: 16px;
+    color: #b09a40;
+    font-weight: bold;
+    margin-bottom: .5rem;
+  }
+  .roadMapDesc {
+    margin-left: 2rem;
+    font-family: 'JosefinSans-Regular', serif;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 1.2rem;
   }
 }
 
