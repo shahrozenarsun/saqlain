@@ -1,0 +1,240 @@
+.teamBannerDiv {
+  width: 100%;
+  height: 90vh;
+  background-image: url("../../assets/team/teamBanner.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.teamBannerLogo {
+  font-family: 'JosefinSans-semiBold', serif;
+  font-size: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b09a40;
+}
+.teamBehind {
+  margin-top: 8rem;
+  position: relative;
+}
+.teamBehindDesc {
+  font-family: 'JosefinSans-semiBold', serif;
+  font-size: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b09a40;
+  line-height: 1;
+}
+.teamBehindCircle {
+  width: 15%;
+  position: absolute;
+  top: -10%;
+  left: -3%;
+}
+.teamBehindDetail {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+.teamBehindDetailDesc {
+  font-size: 24px;
+  font-family: 'JosefinSans-Regular', serif;
+  text-align: left;
+  color: #0B1418;
+}
+.teamImageDiv {
+  position: relative;
+}
+.teamImage {
+  height: 20rem;
+}
+.teamImageDesc {
+  font-family: 'JosefinSans-semiBold', serif;
+  font-size: 18px;
+  color: aliceblue;
+  font-weight: bold;
+  margin-bottom: 0 !important;
+}
+
+.teamImageDesc2 {
+  font-family: 'JosefinSans-Regular', serif;
+  font-size: 12px;
+  color: aliceblue;
+  margin-bottom: 0 !important;
+}
+.teamImageContainer {
+  position: absolute;
+  top: 75%;
+  left: 16%;
+}
+.contain {
+  margin-top: 3rem;
+}
+
+.footer {
+  width: 100%;
+  background-image: url("../../assets/team/Footer@2x.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  margin-top: 3rem;
+}
+.footer-inner {
+  margin-top: 7rem;
+  width: 20%;
+}
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  width: 15%;
+  justify-content: space-around;
+  padding-top: 2.5rem;
+  gap: 1rem;
+}
+.footer-icon {
+  height: 40px;
+  width: 40px;
+}
+.copyRight {
+  font-family: "JosefinSans-Regular", serif;
+  padding-top: 5rem;
+  padding-bottom: 2.5rem;
+  color: #5389a2;
+  font-size: 12px;
+  opacity: 70%;
+}
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .teamBannerDiv {
+    height: 50vh;
+  }
+
+  .teamBannerLogo {
+    font-size: 32px;
+  }
+  .teamBehind {
+    margin-top: 4rem;
+    margin-left: 1rem;
+  }
+  .teamBehindDesc {
+    font-size: 42px;
+  }
+  .teamBehindDetail {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+  .teamBehindDetailDesc {
+    font-size: 16px;
+  }
+  .teamImageDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: .8rem;
+  }
+  .contain {
+    margin-top: 0;
+  }
+
+  .footer-inner {
+    margin-top: 3rem;
+    width: 50%;
+  }
+  .icon-container {
+    width: 15%;
+    gap: 1rem;
+    padding-top: 1rem;
+  }
+  .footer-icon {
+    height: 35px;
+    width: 35px;
+  }
+  .copyRight {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-size: 10px;
+  }
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .teamBannerDiv {
+    height: 50vh;
+  }
+
+  .teamBannerLogo {
+    font-size: 38px;
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+  .teamBehindDesc {
+    font-size: 62px;
+  }
+  .teamBehindDetailDesc {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .teamBannerLogo {
+    font-size: 62px;
+  }
+  .teamBehindDesc {
+    font-size: 62px;
+  }
+  .teamBehindDetailDesc {
+    font-size: 18px;
+  }
+  .footer-inner {
+    margin-top: 3rem;
+    width: 30%;
+  }
+  .icon-container {
+    width: 15%;
+    gap: 1rem;
+    padding-top: 1rem;
+  }
+
+  /*test*/
+  .footer-icon {
+    height: 35px;
+    width: 35px;
+  }
+  .copyRight {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-size: 10px;
+  }
+}
+/*ALL CSS*/
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+  .footer-inner {
+    margin-top: 3rem;
+    width: 30%;
+  }
+  .icon-container {
+    width: 15%;
+    gap: 1rem;
+    padding-top: 1rem;
+  }
+  .footer-icon {
+    height: 35px;
+    width: 35px;
+  }
+  .copyRight {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-size: 10px;
+  }
+}
