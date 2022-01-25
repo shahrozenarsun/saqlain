@@ -18,6 +18,9 @@ video {
   height: 32rem !important;
   width: 58rem !important;
 }
+.active {
+  color: #b09a40;
+}
 iframe {
   height: 32rem !important;
   width: 58rem !important;

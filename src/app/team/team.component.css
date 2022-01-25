@@ -17,6 +17,8 @@
   align-items: center;
   justify-content: center;
   color: #b09a40;
+  padding: 0 22%;
+  text-align: center;
 }
 .teamBehind {
   margin-top: 8rem;
@@ -44,7 +46,7 @@
 .teamBehindDetailDesc {
   font-size: 24px;
   font-family: 'JosefinSans-Regular', serif;
-  text-align: left;
+  text-align: center;
   color: #0B1418;
 }
 .teamImageDiv {
@@ -120,7 +122,8 @@
   }
 
   .teamBannerLogo {
-    font-size: 32px;
+    font-size: 30px;
+    padding: 0 10%;
   }
   .teamBehind {
     margin-top: 4rem;
@@ -131,6 +134,7 @@
   }
   .teamBehindDetail {
     margin-top: 2rem;
+    padding: 0 1%;
     margin-bottom: 4rem;
   }
   .teamBehindDetailDesc {
@@ -147,6 +151,9 @@
     margin-top: 0;
   }
 
+  .teamImageContainer {
+    left: 25%;
+  }
   .footer-inner {
     margin-top: 3rem;
     width: 50%;
@@ -188,7 +195,7 @@
 
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
   .teamBannerLogo {
-    font-size: 62px;
+    font-size: 48px;
   }
   .teamBehindDesc {
     font-size: 62px;
